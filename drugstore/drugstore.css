@@ -1,0 +1,404 @@
+/* font */
+@font-face {
+    font-family: "yekan";
+    src: url(../fonts/Yekan/Yekan.ttf);
+    src: url(../fonts/Yekan/Yekan.eot?#iefix) format(“embedded-opentype”),
+      url(../fonts/Yekan/Yekan.woff) format(“woff”),
+      url(../fonts/Yekan/Yekan.ttf) format(“truetype”),
+      url(../fonts/Yekan/Yekan.svg#BYekan) format(“svg”);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* color variable */
+  :root {
+    --color1: #1894ff;
+    --color2: #e6f3ff;
+    --color3: #00de9a;
+    --color4: #f9f9f9;
+    --color5: #2361b5;
+    --color6: #616161;
+  }
+  
+  body {
+    direction: rtl;
+    font-family: "yekan";
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  button {
+    border-radius: 10px;
+    font-family: "Yekan";
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 65px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  form .text:focus {
+    outline: none;
+  }
+  
+  section{
+    padding: 1.5rem 9rem;
+  }
+
+  /* nav-bar */
+  header .container {
+    padding: 1.5rem 6rem;
+  }
+  
+  .nav-class {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    width: 35px;
+    height: 45px;
+  }
+  
+  .logo div {
+    line-height: 10px;
+    padding-right: 0.5rem;
+  }
+  
+  .logo h1 {
+    font-size: 18px;
+  }
+  
+  .logo p {
+    font-size: 12px;
+  }
+  
+  ul {
+    list-style: none;
+    width: 448px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-button {
+    width: 150px;
+    height: 45px;
+    background-color: var(--color2);
+    color: var(--color1);
+  }
+
+  /* .section-1{
+      padding: 1.5rem 6rem;
+  } */
+
+  .container-group{
+    width: 504px;
+      height: 371px;
+  }
+
+  .container-group h1{
+      padding: 0 0 23px 95px;
+      font-size: 30px;
+      font-weight: bold;
+      color: var(--color1);
+  }
+
+.container-group p{
+    padding: 0 0 47px 56px;
+    font-size: 16px;
+}
+
+.section-1 form {
+    width: 500px;
+    height: 65px;
+    background-color:var(--color4);
+    margin: 20px 0;
+  }
+  
+  form .text {
+    width: 267px;
+    height: 21px;
+    border: none;
+    font-size: 16px;
+    color: grey;
+    background-color: var(--color4);
+  }
+  
+  form .button {
+    width: 130px;
+    height: 45px;
+    color: white;
+    background-color: var(--color1);
+    border-radius: 10px;
+    font-family: "Yekan";
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+  }
+  
+
+  .drugstore-group{
+      width: 504px;
+      height: 371px;
+
+  }
+
+  .drugstore-group label{
+      float: left; 
+  }
+
+  .drugstore-group div{
+      border-radius: 25px;
+      box-shadow: 0 0 30px 0 var(--color2);    
+      padding: 10px;
+  }
+
+  .drugstore-group .profile{
+    float:right;
+    padding: 10px 10px;
+  }
+
+.drugstore-group label{
+  color: white;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--color1);
+    padding-top:5px ;
+}
+
+  .drugstore-group .group-1{
+      width: 438px;
+      height: 125px;
+  }
+
+  .group-1 h2{
+    font-size: 20px;
+  }
+
+  .group-1 p{
+    font-size: 12px;
+  }
+
+  .group-1 label{
+    width: 80px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .drugstore-group .group-2, .drugstore-group .group-3{
+    width: 306px;
+    height: 87px;
+  }
+
+  .group-2 .profile, .group-3 .profile{
+    width: 52px;
+    height: 52px;
+   
+  }
+
+  .group-2 h2, .group-3 h2{
+    font-size: 13px;
+  }
+
+  .group-2 p, .group-3 p{
+    font-size: 8px;
+  }
+
+  .group-3 label{
+    width: 55px;
+    height: 19px;
+    font-size: 8px;
+  }
+  .drugstore-group .group-2{
+    margin: 36px 66px 36px 132px;
+    padding: 17px 18px 17px 66px;
+    filter: opacity(70%);
+  }
+
+  .drugstore-group .group-3{
+    margin: 36px 198px 0 0;
+    padding: 8px 18px 17px 11px;
+    filter: opacity(50%);
+ 
+  }
+
+  /* section  2*/
+  .section-2{
+    width: auto;
+    height: 120px;
+    background: url(./img/section2/Group5423.svg) no-repeat -15px, url(./img/section2/Group5422.svg) no-repeat 1275px,
+    var(--color1);
+    color: white;
+    margin: 7rem 0;
+  }
+
+  .section-2 p{
+    font-size: 16px;
+  }
+
+  .section-2 .count{
+    font-size: 36px;
+  }
+
+  /* section 3 */
+  .section-3 h1{  
+    color: var(--color5);
+    font-size: 20px;
+  }
+  
+  .section-3 p{
+    font-size: 16px;
+  }
+
+  .section-3 .header{
+    padding-right: 31px;
+    border-right: solid var(--color3) 3px;
+  }
+
+  .section-3 .registering-stors{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .registering-stors div{
+    width: 443px;
+    height: 500px;
+    box-shadow: 0 0 30px 0 var(--color2);  
+    border-radius: 50px;
+    margin-top: 58px ;
+  }
+
+  .registering-stors img{
+    /* position: absolute; */
+    padding: 54px 152.5px ;
+  }
+
+  .registering-stors h1{
+    padding: 0 21px 0 0;
+  }
+
+  .registering-stors p{
+    padding: 0 21px 0 ;
+    font-size: 14px;
+  }
+
+  .registering-stors button{
+    width: 170px;
+    height: 52px;
+    margin: 36px 136px ;
+    font-size: 16px;
+    color: white;
+    background-color: var(--color1);
+    border-radius: 10px;
+  }
+
+  /* section 4 */
+.section-4 {
+  height: 130px;
+ margin-top: 100px;
+  background-color: var(--color1);
+}
+
+.section-4 .information {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.section-4 h1 {
+  font-size: 20px;
+}
+
+.section-4 p {
+  padding: 0 30px;
+  font-size: 14p;
+}
+
+.section-4 button {
+  width: 260px;
+  height: 52px;
+  background-color: var(--color5);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  padding: 5.5rem 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .logo-footer {
+  display: flex;
+}
+
+.logo-footer img {
+  width: 35px; /* 2rem */
+  height: 45px; /* 3rem */
+}
+
+.logo-footer div {
+  line-height: 10px; /* 0.8rem */
+  padding-right: 0.5rem;
+}
+
+.logo-footer h1 {
+  font-size: 18px; /* 1.2rem */
+}
+
+.logo-footer p {
+  font-size: 12px;
+}
+
+footer a {
+  padding: 10px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.info-footer a {
+  color: var(--color6);
+}
+
+.info-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+footer button {
+  width: 180px;
+  height: 55px;
+  background-color: #000;
+  margin-right: 10px;
+}
