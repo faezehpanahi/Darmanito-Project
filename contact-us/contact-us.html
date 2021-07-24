@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سوالات متداول</title>
-    <link rel="stylesheet" href="./question.css">
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="./contact-us.css">
+    <!-- google -->
+
 </head>
 
 <body>
@@ -26,7 +28,7 @@
                         <a class="nav-link" href="#">در باره ما</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../contact-us/contact-us.html">تماس با ما</a>
+                        <a class="nav-link" href="./contact-us.html">تماس با ما</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../drugstore/drugstore.html">عضویت داروخانه‌ها</a>
@@ -41,58 +43,45 @@
         <section class="section-1 ">
             <img class="background-1" src="./img/section1/MaskGrou34.svg" alt="">
             <img class="background-2" src="./img/section1/MaskGroup33.svg" alt="">
-            <h1>سوالات متداول</h1>
+            <h1>تماس با ما</h1>
+            <h1></h1>
         </section>
 
-        <section class="section-2 ">
-            <div class="container-buttons">
-                <h1>سوال شما درباره کدام سرویس است؟</h1>
-                <div>
-                    <button class="basic">
-                        <img src="./img/section2/Group-4137.svg" alt="drugstore" />داروخانه
-                    </button>
-                    <button>
-                        <img src="./img/section2/computer-(1).svg" alt="store" />فروشگاه
-                    </button>
-                    <!-- <label for="">به زودی</label> -->
-                    <button>
-                        <img src="./img/section2/doctor-(3).svg" alt="doctor visit" />ویزیت آنلاین
-                    </button>
-                    <!-- <label for="">به زودی</label> -->
-                    <button>
-                        <img src="./img/section2/Group-4194.svg" alt="take turns" />ویزیت آنلاین
-                    </button>
+        <section class="section-2">
+            <div class="form-table">
+                <form action="post">
+                    <label for="name">نام و نام خانوادگی</label>
+                    <br>
+                    <input id='name' type="text" value="ایمیل یا شماره همراه" onfocus="this.value=''">
+                    <br>
+                    <label for="email">ایمیل یا شماره همراه</label>
+                    <br>
+                    <input id='email' type="text" value="ایمیل یا شماره همراه" onfocus="this.value=''">
+                    <br>
+                    <label for="messege">پیام شما</label>
+                    <br>
+                    <textarea name="" id="messege" onfocus="this.value=''">ایمیل یا شماره همراه</textarea>
+                    <br>
+                    <input class="button-submit" type="submit" value="ارسال پیام">
+                </form>
+            </div>
+            <div class="map-table">
+                <div id="googleMap"></div>
+                <div class="map-information">
+                    <div>
+                        <p>ایمیل</p>
+                        <p class="detail">info@nahiraTech.com</p>
+                        <p>شماره ثابت</p>
+                        <p class="detail">۰۲۱-۴۴۲۱۹۶۷۱</p>
+                    </div>
+                    <div>
+                        <p>آدرس</p>
+                        <p>تهران، طرشت، خیابان شهید چوب تراش، خیابان شهید حسین مردی، بن‌بست پنجم، پلاک 15، واحد 1</p>
+                    </div>
                 </div>
+            </div>
 
-            </div>
-            <div class="list">
-                <ul>
-                    <li>
-                        <img src="./img/section2/24 - basic - plus.svg" alt="">
-                        هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟
-                    </li>
-                    <hr>
-                    <li>
-                        <img src="./img/section2/24 - basic - plus.svg" alt="">
-                        هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟
-                    </li>
-                    <hr>
-                    <li>
-                        <img src="./img/section2/24 - basic - minus.svg" alt="">
-                        درمانیتو در تهران و کرج فعال هست؟
-                    </li>
-                    <ul class="container-list">
-                        <li>
-                            خیر، ما هم اکنون در تهران و کرج در حال فعالیت هستیم.
-                        </li>
-                    </ul>
-                    <hr>
-                    <li>
-                        <img src="./img/section2/24 - basic - plus.svg" alt="">
-                        هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟
-                    </li>
-                </ul>
-            </div>
+
         </section>
 
         <section class="section-3 container">
@@ -125,10 +114,10 @@
         <div class="info-footer">
             <h4>خدمات درمانیتو</h4>
             <a style="
-              color: var(--color5);
-              padding-right: 1rem;
-              border-right: solid var(--color3) 3px;
-            " href="#">
+          color: var(--color5);
+          padding-right: 1rem;
+          border-right: solid var(--color3) 3px;
+        " href="#">
                 داروخانه آنلاین
             </a>
             <a href="#">فروشگاه آنلاین</a>
@@ -139,7 +128,7 @@
             <h4>صفحات درمانیتو</h4>
             <a href="#">تماس با ما</a>
             <a href="#">درباره ما</a>
-            <a href="./question.html">سوالات متداول</a>
+            <a href="../questions/question.html">سوالات متداول</a>
             <a href="#">قوانین و شرایط</a>
         </div>
         <div class="div-footer">
@@ -148,6 +137,26 @@
             <button><img src="./img/footer/Group1.svg" /></button>
         </div>
     </footer>
+
+    <script>
+
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 9,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map1 = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+        }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
 </body>
+
+
+
 
 </html>
