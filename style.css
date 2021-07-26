@@ -108,6 +108,20 @@ ul {
   color: var(--color1);
 }
 
+/* .nav-list.active {
+  right: 0;
+} */
+
+/* .close {
+  position: absolute;
+  left: 1.5rem;
+  top: 1rem;
+} */
+
+/* .menu-icons{
+  display: none;
+} */
+
 .section-2 h1,
 .section-3 h1,
 .section-5 h1 {
@@ -117,10 +131,14 @@ ul {
   border-right: solid var(--color3) 3px;
 }
 
+
+
 /* section 1 */
 .section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-right: 6rem;
-  padding-left: 0;
 }
 
 .section-1 h1 {
@@ -130,6 +148,11 @@ ul {
 
 .section-1 p {
   font-size: 18px;
+}
+
+.section-1 .button-group{
+  display: flex;
+  flex-direction: row;
 }
 
 .section-1 button {
@@ -149,24 +172,22 @@ ul {
   background-color: #fff;
 }
 
-.section-1 .img-group {
-  width: 800px;
-  height: 650px;
-  background: url(./svg-picture/section1/Path-15701.svg) no-repeat -300px 0;
-  background-size: 900px;
-  position: relative;
+.img-group .basic-page {
+  width: 900px;
+  height: 618px;
+  /* margin-left: -100px; */
+  /* position: absolute; */
+  /* right: 700px; */
+  /* top: 100px;  */
 }
 
-.section-1 img {
-  width: 400px;
-  height: 323px;
-  position: absolute;
-  right: 300px;
-  top: 100px;
-}
+
 
 /* section 2 */
 .section-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 6.5rem 6rem;
 }
 
@@ -177,7 +198,7 @@ ul {
   margin-left: 5rem;
 }
 
-.section-2 .img-1 {
+.section-2 .play-button {
   position: absolute;
   padding: 120px 120px;
 }
@@ -215,9 +236,17 @@ ul {
   border: rgb(211, 205, 205) solid 1px;
 }
 
+
+
 /* section 3 */
 .section-3 {
   padding: 6.5rem 6rem;
+}
+
+.section-3 .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section-3 .container-buttons {
@@ -245,7 +274,7 @@ ul {
   justify-content: space-between;
 }
 
-.section-3 .basic {
+.section-3 button:hover, .section-3 button:focus {
   filter: none;
   color: var(--color1);
   box-shadow: 0 -10px 15px var(--color2), 0 10px 15px var(--color2),
@@ -257,22 +286,35 @@ ul {
   height: 366px;
 }
 
-.container-table .steps {
-  padding-right: 50px;
+ .section-3 span{
+  height: 500px;
+  width: 1px;
+  background-color: gray;
 }
 
-.container-table img {
-  position: absolute;
-  left: 640px;
-}
+.section-3 line-drow::after, .section-3 line-drow::before{
+  content: '';
+  
+} 
 
 .container-steps {
   font-size: 14px;
   padding: 0 90px;
+} 
+
+.basic-page{
+  display: block;
 }
+.responsive-page{
+  display: none;
+}
+
 
 /* section 4 */
 .section-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 6rem;
   background: var(--color1);
   background: url(./svg-picture/section4/Path15752.svg) no-repeat -100px -80px,
@@ -318,15 +360,25 @@ form .button {
   margin: 20px 5px;
 }
 
-.section-4 .image {
+.section-4 .app-buttons{
+  display: flex;
+  flex-direction: row;
+}
+.section-4 .section4-image {
   width: 573px;
   height: 572px;
   position: relative;
   bottom: -40px;
+  left: -100px;
+  
 }
 
 /* section 5 */
+
 .section-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 12.5rem 6rem;
   background: url(./svg-picture/section5/Path15631.svg) no-repeat 450px;
 }
@@ -357,14 +409,24 @@ form .button {
 }
 
 form .text {
+  width: 267px ;
   background-color: var(--color4);
+  border: none;
 }
 
 .section-5 .button {
   width: 130px;
+  height: 45px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--color1);
+  border: none;
+  font-family: 'yekan';
+  font-weight: bold;
 }
 
-.section-5 .image {
+.section-5 .section5-image {
   width: 406px;
   height: 315px;
   position: relative;
@@ -373,6 +435,9 @@ form .text {
 
 /* section 6 */
 .section-6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 130px;
   padding: 0 6rem;
   background-color: var(--color1);
@@ -390,7 +455,7 @@ form .text {
 
 .section-6 p {
   padding: 0 30px;
-  font-size: 14p;
+  font-size: 14px;
 }
 
 .section-6 button {
@@ -455,3 +520,250 @@ footer button {
   background-color: #000;
   margin-right: 10px;
 }
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 400px){
+  .responsive-page{
+    display: block;
+  }
+  .basic-page{
+    display: none;
+  }
+
+  /* section 1 */
+  .section-1{
+    flex-direction: column-reverse;
+    padding: 3rem 0;
+  }
+
+  .section-1 .button-group{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-1 img{
+    width: 302px;
+    height: 227px;
+  }
+
+
+
+  /* section 2 */
+    .section-2{
+      flex-direction: column;
+      width: 302px;
+      height: 520px;
+      /* padding-right: 0rem; */
+    }
+  
+    .section-2 .img-group {
+      width: 300px;
+      height: 300px;
+      background: url(./svg-picture/section2/Card-Bacground.svg) no-repeat;
+      background-size: 300px;
+    }
+  
+    .section-2 .phone{
+      width: 300px;
+      height:500px;
+    } 
+  
+    .section-2 .container-group{
+      width: 302px;
+      height: 168px;
+    }
+  
+    .section-2 h1{
+      font-size: 16px;
+    }
+  
+    .section-2 p{
+      font-size: 12px;
+    }
+
+    /* section3 */
+    .section-3 .container{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .section-3 button {
+      width: 120px;
+      height: 120px;
+      font-size: 12px;
+    }
+  
+    .section-3 .container-buttons{
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      padding-right: 50px;
+    }
+  
+    .section-3 .container-table{
+      width: 303px;
+      height: 416px;
+    }
+  
+    .container-steps {
+      padding: 0 30px;
+    } 
+
+     /* section 4 */
+     .section-4{
+      height: 894px;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      background-image: none;
+    }
+  
+    .section-4 .information{
+      display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    }
+  
+    .section-4 p{
+      width: 302px;
+      font-size: 12px;
+    }
+  
+    .section-4 h1{
+      font-size: 16px;
+      text-align: right;
+    }
+  
+    .section-4 form{
+      width: 335px;
+      height: 54px;
+    }
+  
+    form .button {
+      width: 84px;
+      height: 35px;  
+    }
+  
+    form .text {
+      width: 195px;
+      height: 16px;
+      font-size: 12px; 
+    }
+  
+    .section-4 .app-buttons{
+      /* margin-right: 80px; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .section-4 .section4-image {
+      width: 229px;
+      height: 465px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      right: 10px;
+    }
+
+  /* section 5 */
+  .section-5{
+    padding:  10px;
+    background-image: none;
+    /* margin: 5rem 1rem; */
+  }
+
+  .section-5 .card{
+    width: 320px;
+    height: 550px; 
+    padding: 0.5rem;
+    margin: 7rem 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-5 .section5-image{
+    width: 262px;
+  }
+
+  .section5-image img{
+    width: 262px;
+    height: 195px;
+    position: absolute;
+    bottom: 70px;
+  }
+
+  .section-5 .information{
+    width: 302px;
+    height: 200px;
+  }
+
+  .section-5 h1{
+    font-size: 16px;
+  }
+  .section-5 p{
+    width: 262px;
+    height: 73px;
+    font-size: 12px;
+  }
+
+  .section-5 form{
+    width: 302px;
+    height: 55px;
+  }
+
+  .section-5 .text{
+    width: 117px;
+    height: 16px;
+    font-size: 12px;
+  }
+
+  .section-5 .button{
+    width: 93px;
+    height: 38px;
+    font-size: 12px;
+  }
+
+   /* section 6 */
+   .section-6 {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    padding: 0 6rem;
+  }
+  
+  .section-6 .information {
+    width: 204px;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    padding-top: 10px;
+  }
+  
+  .section-6 h1 {
+    font-size: 16px;
+  }
+  
+  .section-6 p {
+    padding: 0;
+    font-size: 12px;
+  }
+  
+  .section-6 button {
+    width: 260px;
+    height: 52px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  /* footer */
+  footer{
+    width: 302px;
+    height: 253px;
+    padding-right: 60px;
+  }
+} 
