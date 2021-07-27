@@ -17,34 +17,42 @@
   <header>
     <div class="container">
       <nav class="nav-class">
-        <div class="logo">
-          <img src="./svg-picture/header/Group 123.svg" alt="logo" />
+        <div class="topnav">
+          <div class="logo">
+            <img src="./svg-picture/header/Group 123.svg" alt="logo" />
+            <div>
+              <h1>درمانیتو</h1>
+              <p>همراه شما در درمان</p>
+            </div>
+          </div>
+
+          <div id="myLinks" class="my-links">
+            <ul class="nav-list">
+              <li><a href="./index.html">صفحه اصلی</a></li>
+              <li>
+                <a href="#">در باره ما</a>
+              </li>
+              <li>
+                <a href="./contact-us/contact-us.html">تماس با ما</a>
+              </li>
+              <li">
+                <a href="./drugstore/drugstore.html">عضویت داروخانه‌ها</a>
+                </li>
+            </ul>
+            <button class="nav-button basic-page">دانلود درمانیتو</button>
+            <button class="nav-button responsive-page">دانلود مستقیم درمانیتو</button>
+          </div>
           <div>
-            <h1>درمانیتو</h1>
-            <p>همراه شما در درمان</p>
+            <a id="open" class="icon open" onclick="myFunction()">
+              <img class="menu-icons open" src="./24 - basic - menu.svg" alt="">
+            </a>
+          </div>
+          <div>
+            <a id="close" class="icon close" onclick="myFunction()">
+              <img class="menu-icon " src="./24 - basic - plus.svg" alt="">
+            </a>
           </div>
         </div>
-
-        <div>
-          <img class="menu-icons open" src="./24 - basic - menu.svg" alt="">
-        </div>
-
-        <ul class="nav-list">
-          <div>
-            <img class="menu-icons close" src="./24 - basic - plus.svg" alt="">
-          </div>
-          <li class="nav-item"><a class="nav-link" href="./index.html">صفحه اصلی</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">در باره ما</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact-us/contact-us.html">تماس با ما</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./drugstore/drugstore.html">عضویت داروخانه‌ها</a>
-          </li>
-        </ul>
-        <button class="nav-button">دانلود درمانیتو</button>
       </nav>
     </div>
   </header>
@@ -64,16 +72,16 @@
 
       </div>
       <div class="img-group">
-        <img class="basic-page " src="./svg-picture/section1/Group 5538.svg" alt="doctor" />
-        <img class="responsive-page" src="./svg-picture/section1/doctor_two_color.svg" alt="doctor">
+        <img src="./svg-picture/section1/doctor_two_color.svg" alt="doctor" />
       </div>
     </section>
 
     <!-- section 2 -->
     <section class="section-2">
       <div class="img-group">
-        <img class="play-button basic-page" src="./svg-picture/section2/Group-5534.svg" alt="play button" />
-        <img class="phone basic-page" src="./svg-picture/section2/Mask-Group-29.svg" alt="phone" />
+        <!-- <img class="play-button basic-page" src="./svg-picture/section2/Group-5534.svg" alt="play button" /> -->
+        <!-- <img class="phone basic-page" src="./svg-picture/section2/Mask-Group-29.svg" alt="phone" /> -->
+        <img class="basic-page" src="./svg-picture/section2/Group 5535.png" alt="">
         <img class="responsive-page" src="./svg-picture/section2/Group 5540.svg">
       </div>
       <div class="container-group">
@@ -152,26 +160,43 @@
             داروخانه ها ارسال کنید و در کمترین زمان دارو شما پیدا می شود </p>
 
           <div class="step-table">
-            <!-- <img src="./svg-picture/section3/Group5159.svg" /> -->
+            <div class="div-steps">
+              <div>
+                <img src="./svg-picture/section3/Group 5539.svg">
+                <p class="steps">قدم اول</p>
+              </div>
+              <div>
+                <p class="container-steps">
+                  وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید.
+                </p>
+              </div>
+            </div>
 
-            <p class="steps"><img src="./svg-picture/section3/Group 5539.svg">قدم اول</p>
-            <p class="container-steps">
-              وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید.
-            </p>
+            <div class="div-steps">
+              <div class="line-drow">
+                <!-- <span></span> -->
+                <img src="./svg-picture/section3/Group 5539.svg">
+                <p class="steps">قدم دوم</p>
+              </div>
+              <div>
+                <p class="container-steps">
+                  بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید.
+                </p>
+              </div>
+            </div>
 
-            <span></span>
-            <p class="steps line-drow"><img src="./svg-picture/section3/Group 5539.svg">قدم دوم</p>
-            <span></span>
-            <p class="container-steps">
-              بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید.
-            </p>
-
-
-            <p class="steps"> <img src="./svg-picture/section3/Group 5153.svg">قدم سوم</p>
-            <p class="container-steps">
-              اگر نتیجه جستوجوی نسخه موفقیت‌آمیز باشه باید منتظر تحویل سفارش
-              باشید.
-            </p>
+            <div class="div-steps">
+              <div>
+                <img src="./svg-picture/section3/Group 5153.svg">
+                <p class="steps"> قدم سوم</p>
+              </div>
+              <div>
+                <p class="container-steps">
+                  اگر نتیجه جستوجوی نسخه موفقیت‌آمیز باشه باید منتظر تحویل سفارش
+                  باشید.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -261,25 +286,27 @@
       <a href="#"><img src="./svg-picture/footer/Icons-Facebook.svg" /></a>
       <a href="#"><img src="./svg-picture/footer/Icons-Facebook(2).svg" /></a>
     </div>
-    <div class="info-footer basic-page">
-      <h4>خدمات درمانیتو</h4>
-      <a style="
-        color: var(--color5);
-        padding-right: 1rem;
-        border-right: solid var(--color3) 3px;
-      " href="#">
-        داروخانه آنلاین
-      </a>
-      <a href="#">فروشگاه آنلاین</a>
-      <a href="#">ویزیت آنلاین</a>
-      <a href="#">پرونده پزشکی</a>
-    </div>
-    <div class="info-footer basic-page">
-      <h4>صفحات درمانیتو</h4>
-      <a href="#">تماس با ما</a>
-      <a href="#">درباره ما</a>
-      <a href="./questions/question.html">سوالات متداول</a>
-      <a href="#">قوانین و شرایط</a>
+    <div class="container">
+      <div class="info-footer basic-page">
+        <h4>خدمات درمانیتو</h4>
+        <a style="
+          color: var(--color5);
+          padding-right: 1rem;
+          border-right: solid var(--color3) 3px;
+        " href="#">
+          داروخانه آنلاین
+        </a>
+        <a href="#">فروشگاه آنلاین</a>
+        <a href="#">ویزیت آنلاین</a>
+        <a href="#">پرونده پزشکی</a>
+      </div>
+      <div class="info-footer basic-page">
+        <h4>صفحات درمانیتو</h4>
+        <a href="#">تماس با ما</a>
+        <a href="#">درباره ما</a>
+        <a href="./questions/question.html">سوالات متداول</a>
+        <a href="#">قوانین و شرایط</a>
+      </div>
     </div>
     <div class="div-footer basic-page">
       <h4>دانلود درمانیتو</h4>
@@ -287,6 +314,27 @@
       <button><img src="./svg-picture/footer/Group1.svg" /></button>
     </div>
   </footer>
+
+
+
+  <script>
+    function myFunction() {
+      var menu = document.getElementById("myLinks");
+      var close = document.getElementById("close");
+      var open = document.getElementById("open");
+
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+        // open.style.display = "block";
+        // close.style.display = 'block';
+      }
+      else {
+        menu.style.display = "block";
+        // open.style.display = 'block';
+        // close.style.display = "block";
+      }
+    }
+  </script>
 </body>
 
 </html>

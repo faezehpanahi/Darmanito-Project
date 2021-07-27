@@ -10,6 +10,13 @@
     font-style: normal;
   }
   
+  .basic-page{
+    display: block;
+  }
+  .responsive-page{
+    display: none;
+  }
+
   /* color variable */
   :root {
     --color1: #1894ff;
@@ -197,11 +204,11 @@
    background-color: white;
    border-radius: 10px;
    position: absolute;
-   top: 640px;
-   left: 120px;
+   top: 40rem;
+   left: 8rem;
  }
 
- .map-information div{
+ .map-information .info{
    width: 226px;
    height: 129px;
  }
@@ -293,3 +300,106 @@
     margin-right: 10px;
   }
   
+  @media screen and (max-width:900px) {
+    .basic-page{
+      display: none;
+    }
+    .responsive-page{
+      display: block;
+    }
+    /* section 2 */
+    .section-2{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+  }
+
+  @media screen and (max-width:700px) {
+      /* section 2 */
+      .section-2 .map-table{
+        width: 302px;
+        height: 399px;
+      }
+
+      .section-2 .map-table .google-map,.map-table .google-map img{
+        width: 302px;
+        height: 245px;
+      }
+
+      .section-2 .map-table .map-information{
+        width: 250px;
+        height: 219px;
+
+      }
+
+      .map-table .map-information{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 20px 0 gray;
+        top: 35rem;
+        right: 7.5rem;
+      }
+      .map-information .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .map-information p{
+        font-size: 12px;
+        padding-right: 5px;
+      }
+
+      .section-2.form-table{
+        width: 304px;
+        height: 436px; 
+      }
+
+      .section-2 .form-table input{
+        width: 303px;
+        height: 46px;
+      }
+
+      .section-2 .form-table .button-submit{
+        width: 303px;
+        height: 52px;
+      }
+
+      .section-2 .form-table textarea{
+        width: 303px;
+        height: 150px;
+      }
+     /* section 3 */
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    padding: 0 6rem;
+  }
+  
+  .section-3 .information {
+    /* width: 204px; */
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    padding-top: 10px;
+  }
+  
+  .section-3 h1 {
+    font-size: 16px;
+  }
+  
+  .section-3 p {
+    padding: 0;
+    font-size: 12px;
+  }
+  
+  .section-3 button {
+    width: 260px;
+    height: 52px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  }
