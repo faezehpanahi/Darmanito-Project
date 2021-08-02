@@ -14,48 +14,47 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <nav class="nav-class">
-        <div class="topnav">
-          <div class="logo">
-            <img src="./svg-picture/header/Group 123.svg" alt="logo" />
-            <div>
-              <h1>درمانیتو</h1>
-              <p>همراه شما در درمان</p>
-            </div>
-          </div>
-
-          <div id="myLinks" class="my-links">
-            <ul class="nav-list">
-              <li><a href="./index.html">صفحه اصلی</a></li>
-              <li>
-                <a href="#">در باره ما</a>
-              </li>
-              <li>
-                <a href="./contact-us/contact-us.html">تماس با ما</a>
-              </li>
-              <li">
-                <a href="./drugstore/drugstore.html">عضویت داروخانه‌ها</a>
-                </li>
-            </ul>
-            <button class="nav-button basic-page">دانلود درمانیتو</button>
-            <button class="nav-button responsive-page">دانلود مستقیم درمانیتو</button>
-          </div>
-          <div>
-            <a id="open" class="icon open" onclick="myFunction()">
-              <img class="menu-icons open" src="./24 - basic - menu.svg" alt="">
-            </a>
-          </div>
-          <div>
-            <a id="close" class="icon close" onclick="myFunction()">
-              <img class="menu-icon " src="./24 - basic - plus.svg" alt="">
-            </a>
-          </div>
-        </div>
-      </nav>
+  <div class="topnav">
+    <div class="logo">
+      <img src="./svg-picture/header/Group 152.svg" alt="logo" />
     </div>
-  </header>
+
+    <div id="myLinks" class="my-links">
+      <ul class="nav-list">
+        <li><a href="./index.html">صفحه اصلی</a></li>
+        <li>
+          <a href="#">در باره ما</a>
+        </li>
+        <li>
+          <a href="./contact-us/contact-us.html">تماس با ما</a>
+        </li>
+        <li">
+          <a href="./drugstore/drugstore.html">عضویت داروخانه‌ها</a>
+          </li>
+          <li class="list-item">
+            <a href="./questions/question.html">سوالات متداول</a>
+          </li>
+          <li class="list-item">
+            <a href="#">قوانین و شرایط</a>
+          </li>
+      </ul>
+      <hr class="list-item">
+      <div>
+        <button class="nav-button">دانلود درمانیتو</button>
+      </div>
+    </div>
+
+    <div>
+      <a id="open" class="icon open" onclick="myFunction1()">
+        <img class="menu-icons open" src="./24 - basic - menu.svg" alt="">
+      </a>
+    </div>
+    <div>
+      <a id="close" class="icon close" onclick="myFunction2()">
+        <img class="menu-icon " src="./24 - basic - plus.svg" alt="">
+      </a>
+    </div>
+  </div>
 
   <main>
     <!-- section 1 -->
@@ -67,7 +66,7 @@
         <div class="button-group">
           <button class="first-button basic-page">دانلود درمانیتو</button>
           <button class="first-button responsive-page">دانلود مستقیم اپ</button>
-          <button class="second-button">عضویت داروخانه‌ها</button>
+          <button class="second-button"><a href="./drugstore/drugstore.html">عضویت داروخانه‌ها</a></button>
         </div>
 
       </div>
@@ -79,10 +78,7 @@
     <!-- section 2 -->
     <section class="section-2">
       <div class="img-group">
-        <!-- <img class="play-button basic-page" src="./svg-picture/section2/Group-5534.svg" alt="play button" /> -->
-        <!-- <img class="phone basic-page" src="./svg-picture/section2/Mask-Group-29.svg" alt="phone" /> -->
-        <img class="basic-page" src="./svg-picture/section2/Group 5535.png" alt="">
-        <img class="responsive-page" src="./svg-picture/section2/Group 5540.svg">
+        <img src="./svg-picture/section2/Group 5535.png" alt="">
       </div>
       <div class="container-group">
         <h1 class="basic-page">درباره درمانیتو</h1>
@@ -128,6 +124,7 @@
       <h1 class="basic-page">امکانات درمانیتو</h1>
       <h1 class="responsive-page">سرویس های درمانیتو</h1>
       <div class="container">
+        <!-- scrool -->
         <div class="container-buttons">
           <div class="button-group">
             <button class="basic">
@@ -146,57 +143,47 @@
             </button>
           </div>
         </div>
-
+        <!-- scrool -->
         <div class="container-table">
-          <h3>داروخانه آنلاین</h3>
-          <p class="basic-page">
-            در سرویس داروخانه شما می‌توانید نسخه دارویی یا محصول بهداشتی خودتون
-            رو برای پیدا شدن به داروخانه و فروشگاه‌ها سفارش بدهید.
-          </p>
-          <p class="responsive-page">شما با درمانیتو میتونید نسخه و دارو خودتون رو اول برای تمام داروخانه های اطراف
-            خودتون
-            و
-            اگر پیدا نشد در تمام
-            داروخانه ها ارسال کنید و در کمترین زمان دارو شما پیدا می شود </p>
-
+          <div class="info">
+            <h3>داروخانه آنلاین</h3>
+            <p class="basic-page">
+              در سرویس داروخانه شما می‌توانید نسخه دارویی یا محصول بهداشتی خودتون
+              رو برای پیدا شدن به داروخانه و فروشگاه‌ها سفارش بدهید.
+            </p>
+            <p class="responsive-page">شما با درمانیتو میتونید نسخه و دارو خودتون رو اول برای تمام داروخانه های اطراف
+              خودتون
+              و
+              اگر پیدا نشد در تمام
+              داروخانه ها ارسال کنید و در کمترین زمان دارو شما پیدا می شود
+            </p>
+          </div>
           <div class="step-table">
-            <div class="div-steps">
-              <div>
-                <img src="./svg-picture/section3/Group 5539.svg">
-                <p class="steps">قدم اول</p>
-              </div>
-              <div>
-                <p class="container-steps">
-                  وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید.
-                </p>
-              </div>
+            <div class="img-steps">
+              <img src="./svg-picture/section3/Group 5539.svg">
+              <img class="line-drow" src="./svg-picture/section3/Group 5539.svg">
+              <img src="./svg-picture/section3/Group 5153.svg">
             </div>
 
-            <div class="div-steps">
-              <div class="line-drow">
-                <!-- <span></span> -->
-                <img src="./svg-picture/section3/Group 5539.svg">
-                <p class="steps">قدم دوم</p>
-              </div>
-              <div>
-                <p class="container-steps">
-                  بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید.
-                </p>
-              </div>
+            <div class="steps">
+              <p>قدم اول</p>
+              <p>قدم دوم</p>
+              <p> قدم سوم</p>
             </div>
 
-            <div class="div-steps">
-              <div>
-                <img src="./svg-picture/section3/Group 5153.svg">
-                <p class="steps"> قدم سوم</p>
-              </div>
-              <div>
-                <p class="container-steps">
-                  اگر نتیجه جستوجوی نسخه موفقیت‌آمیز باشه باید منتظر تحویل سفارش
-                  باشید.
-                </p>
-              </div>
+            <div class="container-steps">
+              <p>
+                وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید.
+              </p>
+              <p>
+                بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید.
+              </p>
+              <p>
+                اگر نتیجه جستوجوی نسخه موفقیت‌آمیز باشه باید منتظر تحویل سفارش
+                باشید.
+              </p>
             </div>
+
           </div>
         </div>
       </div>
@@ -210,7 +197,10 @@
         <p class="basic-page">برای دریافت لینک دانلود شماره خود را وارد کنید.</p>
         <p class="responsive-page">شما میتونید شماره خودتون یا دوست خودتون رو وارد کنید تا لینک دانلود پیامک بشه</p>
         <form action="">
-          <input class="text" type="text" onfocus="this.value=''" value="شماره همراه را وارد کنید 900 36 61 0912" />
+          <input class="text basic-page" type="text" onfocus="this.value=''"
+            value="شماره همراه را وارد کنید 900 36 61 0912" />
+          <input class="text responsive-page" type="text" onfocus="this.value=''"
+            value="شماره همراه را وارد کنید    " />
           <input class="button" type="button" value="بفرست" />
         </form>
         <div class="app-buttons">
@@ -224,7 +214,6 @@
             <img src="./svg-picture/section4/Group1.svg" alt="" />
           </button>
         </div>
-
       </div>
       <div class="section4-image">
         <img src="./svg-picture/section4/MaskGroup32.svg" alt="app phone" />
@@ -272,35 +261,29 @@
   </main>
 
   <footer>
-    <div>
+    <div class="col-1">
       <div class="logo-footer">
-        <img src="./svg-picture/footer/Group 123.svg" alt="logo" />
-        <div>
-          <h1>درمانیتو</h1>
-          <p>همراه شما در درمان</p>
-        </div>
+        <img src="./svg-picture/footer/Group 152.svg" alt="logo" />
       </div>
-      <p style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
-      <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
-      <a href="#"><img src="./svg-picture/footer/linkedin.svg" /></a>
-      <a href="#"><img src="./svg-picture/footer/Icons-Facebook.svg" /></a>
-      <a href="#"><img src="./svg-picture/footer/Icons-Facebook(2).svg" /></a>
+      <div>
+        <p style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+        <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
+      </div>
+      <div>
+        <a href="#"><img src="./svg-picture/footer/linkedin.svg" /></a>
+        <a href="#"><img src="./svg-picture/footer/Icons-Facebook.svg" /></a>
+        <a href="#"><img src="./svg-picture/footer/Icons-Facebook(2).svg" /></a>
+      </div>
     </div>
-    <div class="container">
-      <div class="info-footer basic-page">
+    <div class="container-footer basic-page">
+      <div class="col-2 basic-page">
         <h4>خدمات درمانیتو</h4>
-        <a style="
-          color: var(--color5);
-          padding-right: 1rem;
-          border-right: solid var(--color3) 3px;
-        " href="#">
-          داروخانه آنلاین
-        </a>
+        <a href="#">داروخانه آنلاین</a>
         <a href="#">فروشگاه آنلاین</a>
         <a href="#">ویزیت آنلاین</a>
         <a href="#">پرونده پزشکی</a>
       </div>
-      <div class="info-footer basic-page">
+      <div class="col-3 basic-page">
         <h4>صفحات درمانیتو</h4>
         <a href="#">تماس با ما</a>
         <a href="#">درباره ما</a>
@@ -308,7 +291,7 @@
         <a href="#">قوانین و شرایط</a>
       </div>
     </div>
-    <div class="div-footer basic-page">
+    <div class="col-4 basic-page">
       <h4>دانلود درمانیتو</h4>
       <button><img src="./svg-picture/footer/Group5367f.svg" /></button>
       <button><img src="./svg-picture/footer/Group1.svg" /></button>
@@ -318,23 +301,27 @@
 
 
   <script>
-    function myFunction() {
+    function myFunction1() {
       var menu = document.getElementById("myLinks");
       var close = document.getElementById("close");
       var open = document.getElementById("open");
 
-      if (menu.style.display === "block") {
-        menu.style.display = "none";
-        // open.style.display = "block";
-        // close.style.display = 'block';
-      }
-      else {
-        menu.style.display = "block";
-        // open.style.display = 'block';
-        // close.style.display = "block";
-      }
+      menu.style.display = "block"
+      open.style.display = "none";
+      close.style.display = 'block';
+    }
+
+    function myFunction2() {
+      var menu = document.getElementById("myLinks");
+      var close = document.getElementById("close");
+      var open = document.getElementById("open");
+
+      menu.style.display = "none"
+      open.style.display = "block";
+      close.style.display = 'none';
     }
   </script>
+
 </body>
 
 </html>

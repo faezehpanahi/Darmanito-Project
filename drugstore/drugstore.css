@@ -16,6 +16,9 @@
   .responsive-page{
     display: none;
   } 
+  .list-item{
+    display: none;
+  }
 
   /* color variable */
   :root {
@@ -47,12 +50,6 @@
     font-size: 16px;
   }
   
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
   form {
     display: flex;
     justify-content: space-around;
@@ -67,48 +64,26 @@
     outline: none;
   }
   
-  section{
-    /* padding: 1.5rem 9rem; */
-  }
 
   /* nav-bar */
-  header .container {
-    padding: 1.5rem 6rem;
+  .topnav{
+    height: 70px;
+    padding-top: 5%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: space-around;
   }
   
-  .nav-class {
+  .my-links{
+    width: 70%;
+    display: flex;
+  }
+  
+   ul {
+    list-style: none;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .logo img {
-    width: 35px;
-    height: 45px;
-  }
-  
-  .logo div {
-    line-height: 10px;
-    padding-right: 0.5rem;
-  }
-  
-  .logo h1 {
-    font-size: 18px;
-  }
-  
-  .logo p {
-    font-size: 12px;
-  }
-  
-  ul {
-    list-style: none;
-    width: 448px;
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
   
@@ -117,39 +92,53 @@
     height: 45px;
     background-color: var(--color2);
     color: var(--color1);
+  }  
+  
+  .topnav a.close{
+    display: none;
   }
-
+  
+  .topnav a.open{
+    display: none;
+  } 
+    
+  
   /* section 1 */
   .section-1{
-    padding: 1.5rem 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 8rem ;
   }
 
-  .container-group{
-    width: 504px;
-      height: 371px;
+  .section-1 .container-group{
+    width: 50%;
+    height: auto;
   }
 
   .container-group h1{
-      padding: 0 0 23px 95px;
-      font-size: 30px;
-      font-weight: bold;
-      color: var(--color1);
+    width: 50%;
+    padding: 0 0 23px 95px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color1);
   }
 
 .container-group p{
-    padding: 0 0 47px 56px;
-    font-size: 16px;
+  width: 70%;
+  padding: 0 0 47px 56px;
+  font-size: 16px;
 }
 
 .section-1 form {
-    width: 500px;
+    width: 80%;
     height: 65px;
     background-color:var(--color4);
     margin: 20px 0;
   }
   
   form .text {
-    width: 267px;
+    width: 100%;
     height: 21px;
     border: none;
     font-size: 16px;
@@ -169,11 +158,9 @@
     font-size: 16px;
   }
   
-
   .drugstore-group{
-      width: 504px;
-      height: 371px;
-
+      width: 50%;
+      height: auto;
   }
 
   .drugstore-group label{
@@ -270,7 +257,11 @@
   .section-2{
     width: auto;
     height: 120px;
-    background: url(./img/section2/Group5423.svg) no-repeat -15px, url(./img/section2/Group5422.svg) no-repeat 1275px,
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url(./img/section2/Group5423.svg) no-repeat -1%, 
+    url(./img/section2/Group5422.svg) no-repeat 101% ,
     var(--color1);
     color: white;
     margin: 7rem 0;
@@ -287,7 +278,7 @@
 
   /* section 3 */
   .section-3{
-    padding: 1.5rem 9rem;
+    padding: 1.5rem 8rem;
   }
 
   .section-3 h1{  
@@ -305,22 +296,24 @@
   }
 
   .section-3 .registering-stors{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-
   }
 
-  .registering-stors div{
-    width: 443px;
-    height: 500px;
+  .registering-stors .stors{
+    width: 40%;
+    height: auto;
     box-shadow: 0 0 30px 0 var(--color2);  
     border-radius: 50px;
     margin-top: 58px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .registering-stors img{
-    /* position: absolute; */
-    padding: 54px 152.5px ;
+    padding: 2rem 0 ;
   }
 
   .registering-stors h1{
@@ -328,7 +321,7 @@
   }
 
   .registering-stors p{
-    padding: 0 21px 0 ;
+    padding: 0 21px  ;
     font-size: 14px;
   }
 
@@ -343,65 +336,47 @@
   }
 
   /* section 4 */
-.section-4 {
-  height: 130px;
- margin-top: 100px;
-  background-color: var(--color1);
-  padding: 1.5rem 9rem;
-}
-
-.section-4 .information {
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.section-4 h1 {
-  font-size: 20px;
-}
-
-.section-4 p {
-  padding: 0 30px;
-  font-size: 14p;
-}
-
-.section-4 button {
-  width: 260px;
-  height: 52px;
-  background-color: var(--color5);
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .section-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    padding: 0 8rem;
+    background-color: var(--color1);
+  }
+  
+  .section-4 .information {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .section-4 h1 {
+    font-size: 20px;
+  }
+  
+  .section-4 p {
+    padding: 0 30px;
+    font-size: 14px;
+  }
+  
+  .section-4 button {
+    width: 260px;
+    height: 52px;
+    background-color: var(--color5);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
 /* footer */
 footer {
-  padding: 5.5rem 9rem;
+  height: 50vh;
+  padding: 5rem 8rem;
   display: flex;
   justify-content: space-between;
-}
-
-footer .logo-footer {
-  display: flex;
-}
-
-.logo-footer img {
-  width: 35px; /* 2rem */
-  height: 45px; /* 3rem */
-}
-
-.logo-footer div {
-  line-height: 10px; /* 0.8rem */
-  padding-right: 0.5rem;
-}
-
-.logo-footer h1 {
-  font-size: 18px; /* 1.2rem */
-}
-
-.logo-footer p {
-  font-size: 12px;
+  
 }
 
 footer a {
@@ -412,13 +387,38 @@ footer p {
   font-size: 14px;
 }
 
-.info-footer a {
+.container-footer a {
   color: var(--color6);
 }
 
-.info-footer{
+footer .col-1{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+footer .container-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+}
+
+footer .container-footer div{
+ padding-right: 3rem;
+}
+
+.container-footer .col-2,.container-footer .col-3{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-footer a:focus{
+  color: var(--color5);
+  padding-right: 1rem;
+  border-right: solid var(--color3) 3px;
 }
 
 footer button {
@@ -428,33 +428,167 @@ footer button {
   margin-right: 10px;
 }
 
+/* media query */
+@media screen and (max-width: 1320px){
+  /* footr */
+  footer{
+   height: 100%;
+   flex-wrap: wrap;
+  }
+
+  footer .container-footer{
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 1200px){
   /* section 1 */
   .section-1{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
   }
 
   .section-1 .container-group{
+    width: 70%;
     margin-bottom: 4rem;
   }
-}
-@media screen and (max-width: 975px){
-  /* section 3 */
-  .section-3{
-    display: flex;
-    flex-direction: column;  
+
+  .container-group h1{
+    width: 100%;
   }
 
-  .registering-stors{
+  .container-group p{
+    width: 100%;
+  }
+
+  .section-1 form {
+      width: 100%;
+    }
+  
+  .drugstore-group{
+      width: 70%;
+  }
+}
+
+@media screen and (max-width: 850px){
+  /* footer */
+  footer .container-footer, footer .col-4{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list-item{
+    display: block;
+  }
+
+  /* navbar */
+  .topnav a.open{
+    display: block;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+  }
+
+  .topnav a.close {
+    display: none;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+  }
+  
+  .topnav .logo{
+    position: absolute;
+    right: 5rem;
+  }
+
+  .topnav .my-links {
+    width: 50%;
+    height:520px;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 7rem;
+    z-index: 1;
+    right: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 grey;
+  }
+  
+  .topnav .my-links .nav-list{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+  }
+
+  .topnav .my-links .nav-list li{
+    line-height: 4.5rem;
+  }
+
+  .topnav .my-links .nav-list a:focus{
+      padding-right: 1rem;
+      color: var(--color5);
+      font-size: 16px;
+      border-right: solid var(--color3) 3px;
+  }
+
+  /* section 1 */
+  .section-1 .drugstore-group .group-1{
+    width: 100%;
+  }
+
+  .section-1 .drugstore-group .group-2,
+  .section-1 .drugstore-group .group-3{
+    display: none;
+  }
+
+  /* section 2 */
+  .section-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1rem;
+    height: 450px;
+    }
+  
+    /* section 3 */
+    .section-3{
+      padding: 1.5rem 4 rem;
+    }
+  .section-3 .registering-stors{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .section-3 .stors{
+    width: 100%;
+  }
+
+   /* section 4 */
+   .section-4{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  /* footer */
+  footer .col-4 button{
+    width: 130px;
+  }
+
+  footer .col-4 button img{
+    width: 110px;
   }
 }
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width:540px) {
   .basic-page{
     display: none;
   }
@@ -467,15 +601,10 @@ footer button {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-  }
-
-  .drugstore-group{
-    width: 300px;
-    height: 90px;
+    padding: 1.5rem 1rem;
   }
 
   .drugstore-group .group-1{
-    width: 293px;
     height: 84px;
   }
 
@@ -499,24 +628,16 @@ footer button {
   }
 
   .section-1 .container-group{
-    width: 302px;
-    height: 294px;
     margin-top: 3rem;
   }
 
   .section-1 .container-group h1{
-    width: 302px;
+    width: auto;
     font-size: 24px;
   }
 
   .section-1 .container-group p{
-    width: 302px;
     font-size: 14px;
-  }
-
-  .section-1 .container-group form{
-    width: 302px;
-    height: 55px;
   }
 
   .container-group form .text{
@@ -529,43 +650,34 @@ footer button {
     font-size: 12px ;
   }
 
-  /* section 2 */
-  .section-2{
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    background: url(./img/section2/Group5423.svg) no-repeat -15px, url(./img/section2/Group5422.svg) no-repeat 39rem,var(--color1);
-  }
-
-  .section-2{
-    text-align: center;
-    line-height: 1rem;
-  }
+   /* section 2 */
   .section-2 p{
     font-size: 14px;
   }
 
-  /* section 3 */
+    /* section 3 */
+    .section-3{
+      padding: 1.5rem 2rem;
+    }
   .section-3 h1{
     width: 302px;
     font-size: 16px;
     
   }
 
-  .section-3 p{
-    width: 302px;
+  .section-3 .responsive-page{
+    width: 300px;
     font-size: 12px;
   }
 
-  /* .registering-stors h1{
-    padding-top: 15rem;
-  } */
-
-  .registering-stors div{
-    width: 302px;
+  .section-3 .registering-stors .stors{
     height: 342px;
-   
-    /* padding-top: 100px; */
+    padding: 1rem 1rem;
+  }
+
+  .section-3 .registering-stors img{
+    height: 30%;
+    visibility: hidden;
   }
 
   .registering-stors div button{
@@ -581,38 +693,56 @@ footer button {
     flex-direction: column;
     height: 170px;
     padding: 0 6rem;
-  }
+    }
   
-  .section-4 .information {
-    /* width: 204px; */
+    .section-4 .information {
+    width: 204px;
     height: 57px;
     display: flex;
     flex-direction: column;
     line-height: 10px;
     padding-top: 10px;
-  }
+    }
   
-  .section-4 h1 {
+    .section-4 h1 {
     font-size: 16px;
-  }
+    }
   
-  .section-4 p {
+    .section-4 p {
     padding: 0;
     font-size: 12px;
-  }
+    }
   
-  .section-4 button {
+    .section-4 button {
     width: 260px;
     height: 52px;
     font-size: 16px;
     margin-bottom: 15px;
-  }
+    }
 
   /* footer */
-  footer{
-    /* width: 302px;
-    height: 253px; */
-    /* padding: 5.5rem 2rem; */
+  .container-footer a, .container-footer h4{
+    display: none;
+  }
+
+  footer .col-1 div:last-child{
+    display: flex;
+    justify-content: space-around;
   }
 }
 
+
+@media screen and (max-width:411px){
+  /* section 2 */
+  .section-2 {
+    padding: 0;
+  }
+  .section-2 .count{
+    font-size: 24px;
+  }
+  
+  /* footer */
+    footer{
+      padding: 5rem 2rem;
+    }
+}

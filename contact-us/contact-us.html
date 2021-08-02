@@ -12,41 +12,56 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="nav-class">
-                <div class="logo">
-                    <img src="./img/header/Group 123.svg" alt="logo" />
-                    <div>
-                        <h1>درمانیتو</h1>
-                        <p>همراه شما در درمان</p>
-                    </div>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">صفحه اصلی</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">در باره ما</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact-us.html">تماس با ما</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../drugstore/drugstore.html">عضویت داروخانه‌ها</a>
-                    </li>
-                </ul>
-                <button class="nav-button">دانلود درمانیتو</button>
-            </nav>
+    <div class="topnav">
+        <div class="logo">
+            <img src="./img/header/Group 152.svg" alt="logo" />
         </div>
-    </header>
+
+        <div id="myLinks" class="my-links">
+            <ul class="nav-list">
+                <li><a href="../index.html">صفحه اصلی</a></li>
+                <li>
+                    <a href="#">در باره ما</a>
+                </li>
+                <li>
+                    <a href="./contact-us.html">تماس با ما</a>
+                </li>
+                <li">
+                    <a href="../drugstore/drugstore.html">عضویت داروخانه‌ها</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="../questions/question.html">سوالات متداول</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">قوانین و شرایط</a>
+                    </li>
+            </ul>
+            <hr class="list-item">
+            <div>
+                <button class="nav-button">دانلود درمانیتو</button>
+            </div>
+        </div>
+
+        <div>
+            <a id="open" class="icon open" onclick="myFunction1()">
+                <img class="menu-icons open" src="./img/header/24 - basic - menu.svg" alt="">
+            </a>
+        </div>
+        <div>
+            <a id="close" class="icon close" onclick="myFunction2()">
+                <img class="menu-icon " src="./img/header/24 - basic - plus.svg" alt="">
+            </a>
+        </div>
+    </div>
 
     <main>
         <section class="section-1 ">
-            <img class="background-1 basic-page" src="./img/section1/MaskGrou34.svg" alt="">
-            <img class="background-2 basic-page" src="./img/section1/MaskGroup33.svg" alt="">
+            <img class="background-1 basic-page" src="./img/section1/MaskGroup33.svg" alt="">
             <h1>تماس با ما</h1>
-            <h1></h1>
+            <img class="background-2 basic-page" src="./img/section1/MaskGrou34.svg" alt="">
         </section>
 
+        <!-- section 2 -->
         <section class="section-2">
             <div class="form-table">
                 <form action="post">
@@ -80,17 +95,16 @@
                             <p class="detail">۰۲۱-۴۴۲۱۹۶۷۱</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="info">
                         <p>آدرس</p>
                         <p>تهران، طرشت، خیابان شهید چوب تراش، خیابان شهید حسین مردی، بن‌بست پنجم، پلاک 15، واحد 1</p>
                     </div>
                 </div>
             </div>
-
-
         </section>
 
-        <section class="section-3 container">
+        <!-- section 3 -->
+        <section class="section-3">
             <div class="information">
                 <h1>پشتیبانی درمانیتو</h1>
                 <p>پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
@@ -103,66 +117,64 @@
     </main>
 
     <footer>
-        <div>
+        <div class="col-1">
             <div class="logo-footer">
-                <img src="./img/footer/Group 123.svg" alt="logo" />
-                <div>
-                    <h1>درمانیتو</h1>
-                    <p>همراه شما در درمان</p>
-                </div>
+                <img src="./img/footer/Group 152.svg" alt="logo" />
             </div>
-            <p style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
-            <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
-            <a href="#"><img src="./img/footer/linkedin.svg" /></a>
-            <a href="#"><img src="./img/footer/Icons-Facebook.svg" /></a>
-            <a href="#"><img src="./img/footer/Icons-Facebook(2).svg" /></a>
+            <div>
+                <p style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+                <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
+            </div>
+            <div>
+                <a href="#"><img src="./img/footer/linkedin.svg" /></a>
+                <a href="#"><img src="./img/footer/Icons-Facebook.svg" /></a>
+                <a href="#"><img src="./img/footer/Icons-Facebook(2).svg" /></a>
+            </div>
         </div>
-        <div class="info-footer basic-page">
-            <h4>خدمات درمانیتو</h4>
-            <a style="
-          color: var(--color5);
-          padding-right: 1rem;
-          border-right: solid var(--color3) 3px;
-        " href="#">
-                داروخانه آنلاین
-            </a>
-            <a href="#">فروشگاه آنلاین</a>
-            <a href="#">ویزیت آنلاین</a>
-            <a href="#">پرونده پزشکی</a>
+        <div class="container-footer basic-page">
+            <div class="col-2 basic-page">
+                <h4>خدمات درمانیتو</h4>
+                <a href="#">داروخانه آنلاین</a>
+                <a href="#">فروشگاه آنلاین</a>
+                <a href="#">ویزیت آنلاین</a>
+                <a href="#">پرونده پزشکی</a>
+            </div>
+            <div class="col-3 basic-page">
+                <h4>صفحات درمانیتو</h4>
+                <a href="#">تماس با ما</a>
+                <a href="#">درباره ما</a>
+                <a href="../questions/question.html">سوالات متداول</a>
+                <a href="#">قوانین و شرایط</a>
+            </div>
         </div>
-        <div class="info-footer basic-page">
-            <h4>صفحات درمانیتو</h4>
-            <a href="#">تماس با ما</a>
-            <a href="#">درباره ما</a>
-            <a href="../questions/question.html">سوالات متداول</a>
-            <a href="#">قوانین و شرایط</a>
-        </div>
-        <div class="div-footer basic-page">
+        <div class="col-4 basic-page">
             <h4>دانلود درمانیتو</h4>
             <button><img src="./img/footer/Group5367f.svg" /></button>
             <button><img src="./img/footer/Group1.svg" /></button>
         </div>
     </footer>
 
-    <!-- <script>
+    <script>
+        function myFunction1() {
+            var menu = document.getElementById("myLinks");
+            var close = document.getElementById("close");
+            var open = document.getElementById("open");
 
-        function myMap() {
-            var mapOptions = {
-                center: new google.maps.LatLng(51.508742, -0.120850),
-                zoom: 9,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
+            menu.style.display = "block"
+            open.style.display = "none";
+            close.style.display = 'block';
+        }
 
-            var map1 = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+        function myFunction2() {
+            var menu = document.getElementById("myLinks");
+            var close = document.getElementById("close");
+            var open = document.getElementById("open");
 
+            menu.style.display = "none"
+            open.style.display = "block";
+            close.style.display = 'none';
         }
     </script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
-
 </body>
-
-
-
 
 </html>

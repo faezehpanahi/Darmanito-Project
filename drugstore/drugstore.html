@@ -9,36 +9,51 @@
 </head>
 
 <body>
-  <!-- <header>
-    <div class="container">
-      <nav class="nav-class">
-        <div class="logo">
-          <img src="./img/header/Group 123.svg" alt="logo" />
-          <div>
-            <h1>درمانیتو</h1>
-            <p>همراه شما در درمان</p>
-          </div>
-        </div>
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="../index.html">صفحه اصلی</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">در باره ما</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../contact-us/contact-us.html">تماس با ما</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./drugstore.html">عضویت داروخانه‌ها</a>
-          </li>
-        </ul>
-        <button class="nav-button">دانلود درمانیتو</button>
-      </nav>
+  <div class="topnav">
+    <div class="logo">
+      <img src="./img/header/Group 152.svg" alt="logo" />
     </div>
-  </header> -->
+
+    <div id="myLinks" class="my-links">
+      <ul class="nav-list">
+        <li><a href="../index.html">صفحه اصلی</a></li>
+        <li>
+          <a href="#">در باره ما</a>
+        </li>
+        <li>
+          <a href="../contact-us/contact-us.html">تماس با ما</a>
+        </li>
+        <li">
+          <a href="./drugstore.html">عضویت داروخانه‌ها</a>
+          </li>
+          <li class="list-item">
+            <a href="../questions/question.html">سوالات متداول</a>
+          </li>
+          <li class="list-item">
+            <a href="#">قوانین و شرایط</a>
+          </li>
+      </ul>
+      <hr class="list-item">
+      <div>
+        <button class="nav-button">دانلود درمانیتو</button>
+      </div>
+    </div>
+
+    <div>
+      <a id="open" class="icon open" onclick="myFunction1()">
+        <img class="menu-icons open" src="./img/header/24 - basic - menu.svg" alt="">
+      </a>
+    </div>
+    <div>
+      <a id="close" class="icon close" onclick="myFunction2()">
+        <img class="menu-icon " src="./img/header/24 - basic - plus.svg" alt="">
+      </a>
+    </div>
+  </div>
 
   <main>
     <!-- section 1 -->
-    <section class="section-1 container">
+    <section class="section-1">
       <div class="container-group">
         <h1>شما هر در سلامت و بهبود مردم کشورمون موثر باشید</h1>
         <p>با ثبت‌نام به عنوان داروخانه فروشگاه و داروخانه شما هم به سیستم درمان کمک کنید و به هزاران کاربر خدمات ارائه
@@ -60,7 +75,7 @@
             <p> درمانیتو، سرویس داروخانه، داروخانه شما</p>
           </div>
         </div>
-        <div class="group-2 basic-page">
+        <div class="group-2">
           <img class="profile" src="./img/section1/Group 5538.svg" alt="profile">
           <h2>نام داروخانه شما</h2>
           <div>
@@ -69,7 +84,7 @@
           </div>
         </div>
 
-        <div class="group-3 basic-page">
+        <div class="group-3">
           <img class="profile" src="./img/section1/Group 5538.svg" alt="profile">
           <label for="">شبانه روزی</label>
           <h2>نام داروخانه شما</h2>
@@ -82,7 +97,7 @@
     </section>
 
     <!-- sectiont 2 -->
-    <section class="section-2 container">
+    <section class="section-2">
       <div>
         <p>تعداد کاربران درمانیتو</p>
         <p class="count">+120,000</p>
@@ -99,25 +114,31 @@
 
     <!-- section 3 -->
     <section class="section-3 ">
-      <h1 class="header basic-page">درمانیتو چه خدماتی ارائه خواهد داد؟</h1>
-      <h1 class="header responsive-page">در درمانیتو چه خدماتی ارائه خواهید داد؟</h1>
-      <p class="basic-page">خدمت مورد نظر خود را برای ثبت نام انتخاب کنید</p>
-      <p class="responsive-page">شما میتونید شماره خودتون یا دوست خودتون رو وارد کنید تا لینک دانلود پیامک بشه</p>
+      <div>
+        <h1 class="header basic-page">درمانیتو چه خدماتی ارائه خواهد داد؟</h1>
+        <h1 class="header responsive-page">در درمانیتو چه خدماتی ارائه خواهید داد؟</h1>
+        <p class="basic-page">خدمت مورد نظر خود را برای ثبت نام انتخاب کنید</p>
+        <p class="responsive-page">شما میتونید شماره خودتون یا دوست خودتون رو وارد کنید تا لینک دانلود پیامک بشه</p>
+      </div>
       <div class="registering-stors">
-        <div>
-          <img class="basic-page" src="./img/section2/health__two_color (4).svg" alt="drugstore">
-          <h1 class="basic-page">داروخانه</h1>
-          <h1 class="responsive-page">فقط داروخانه</h1>
-          <p>مایل هستم فقط به عنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم.
-          </p>
+        <div class="stors">
+          <img src="./img/section2/health__two_color (4).svg" alt="drugstore">
+          <div>
+            <h1 class="basic-page">داروخانه</h1>
+            <h1 class="responsive-page">فقط داروخانه</h1>
+            <p>مایل هستم فقط به عنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم.
+            </p>
+          </div>
           <button>ثبت نام</button>
         </div>
-        <div>
-          <img class="basic-page" src="./img/section2/Group 5536.svg" alt="makeupstore">
-          <h1 class="basic-page">فروشگاه آرایشی و بهداشتی</h1>
-          <h1 class="responsive-page">داروخانه و فروشگاه</h1>
-          <p>مایل هستم فقط به عنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم.
-          </p>
+        <div class="stors">
+          <img src="./img/section2/Group 5536.svg" alt="makeupstore">
+          <div>
+            <h1 class="basic-page">فروشگاه آرایشی و بهداشتی</h1>
+            <h1 class="responsive-page">داروخانه و فروشگاه</h1>
+            <p>مایل هستم فقط به عنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم.
+            </p>
+          </div>
           <button>ثبت نام</button>
         </div>
       </div>
@@ -137,46 +158,65 @@
   </main>
 
   <footer>
-    <div>
+    <div class="col-1">
       <div class="logo-footer">
-        <img src="./img/footer/Group 123.svg" alt="logo" />
-        <div>
-          <h1>درمانیتو</h1>
-          <p>همراه شما در درمان</p>
-        </div>
+        <img src="./img/footer/Group 152.svg" alt="logo" />
       </div>
-      <p style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
-      <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
-      <a href="#"><img src="./img/footer/linkedin.svg" /></a>
-      <a href="#"><img src="./img/footer/Icons-Facebook.svg" /></a>
-      <a href="#"><img src="./img/footer/Icons-Facebook(2).svg" /></a>
+      <div>
+        <p style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+        <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
+      </div>
+      <div>
+        <a href="#"><img src="./img/footer/linkedin.svg" /></a>
+        <a href="#"><img src="./img/footer/Icons-Facebook.svg" /></a>
+        <a href="#"><img src="./img/footer/Icons-Facebook(2).svg" /></a>
+      </div>
     </div>
-    <div class="info-footer basic-page">
-      <h4>خدمات درمانیتو</h4>
-      <a style="
-        color: var(--color5);
-        padding-right: 1rem;
-        border-right: solid var(--color3) 3px;
-      " href="#">
-        داروخانه آنلاین
-      </a>
-      <a href="#">فروشگاه آنلاین</a>
-      <a href="#">ویزیت آنلاین</a>
-      <a href="#">پرونده پزشکی</a>
+    <div class="container-footer basic-page">
+      <div class="col-2 basic-page">
+        <h4>خدمات درمانیتو</h4>
+        <a href="#">داروخانه آنلاین</a>
+        <a href="#">فروشگاه آنلاین</a>
+        <a href="#">ویزیت آنلاین</a>
+        <a href="#">پرونده پزشکی</a>
+      </div>
+      <div class="col-3 basic-page">
+        <h4>صفحات درمانیتو</h4>
+        <a href="#">تماس با ما</a>
+        <a href="#">درباره ما</a>
+        <a href="../questions/question.html">سوالات متداول</a>
+        <a href="#">قوانین و شرایط</a>
+      </div>
     </div>
-    <div class="info-footer basic-page">
-      <h4>صفحات درمانیتو</h4>
-      <a href="#">تماس با ما</a>
-      <a href="#">درباره ما</a>
-      <a href="../questions/question.html">سوالات متداول</a>
-      <a href="#">قوانین و شرایط</a>
-    </div>
-    <div class="div-footer basic-page">
+    <div class="col-4 basic-page">
       <h4>دانلود درمانیتو</h4>
       <button><img src="./img/footer/Group5367f.svg" /></button>
       <button><img src="./img/footer/Group1.svg" /></button>
     </div>
   </footer>
+
+
+  <script>
+    function myFunction1() {
+      var menu = document.getElementById("myLinks");
+      var close = document.getElementById("close");
+      var open = document.getElementById("open");
+
+      menu.style.display = "block"
+      open.style.display = "none";
+      close.style.display = 'block';
+    }
+
+    function myFunction2() {
+      var menu = document.getElementById("myLinks");
+      var close = document.getElementById("close");
+      var open = document.getElementById("open");
+
+      menu.style.display = "none"
+      open.style.display = "block";
+      close.style.display = 'none';
+    }
+  </script>
 </body>
 
 </html>

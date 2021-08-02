@@ -10,62 +10,85 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="nav-class">
-                <div class="logo">
-                    <img src="./img/header/Group 123.svg" alt="logo" />
-                    <div>
-                        <h1>درمانیتو</h1>
-                        <p>همراه شما در درمان</p>
-                    </div>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">صفحه اصلی</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">در باره ما</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../contact-us/contact-us.html">تماس با ما</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../drugstore/drugstore.html">عضویت داروخانه‌ها</a>
-                    </li>
-                </ul>
-                <button class="nav-button">دانلود درمانیتو</button>
-            </nav>
+    <div class="topnav">
+        <div class="logo">
+            <img src="./img/header/Group 152.svg" alt="logo" />
         </div>
-    </header>
+
+        <div id="myLinks" class="my-links">
+            <ul class="nav-list">
+                <li><a href="../index.html">صفحه اصلی</a></li>
+                <li>
+                    <a href="#">در باره ما</a>
+                </li>
+                <li>
+                    <a href="../contact-us/contact-us.html">تماس با ما</a>
+                </li>
+                <li">
+                    <a href="../drugstore/drugstore.html">عضویت داروخانه‌ها</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./question.html">سوالات متداول</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">قوانین و شرایط</a>
+                    </li>
+            </ul>
+            <hr class="list-item">
+            <div>
+                <button class="nav-button">دانلود درمانیتو</button>
+            </div>
+        </div>
+
+        <div>
+            <a id="open" class="icon open" onclick="myFunction1()">
+                <img class="menu-icons open" src="./img/header/24 - basic - menu.svg" alt="">
+            </a>
+        </div>
+        <div>
+            <a id="close" class="icon close" onclick="myFunction2()">
+                <img class="menu-icon " src="./img/header/24 - basic - plus.svg" alt="">
+            </a>
+        </div>
+    </div>
 
     <main>
         <section class="section-1 ">
-            <img class="background-1" src="./img/section1/MaskGrou34.svg" alt="">
-            <img class="background-2" src="./img/section1/MaskGroup33.svg" alt="">
+            <img class="background-1 basic-page" src="./img/section1/MaskGroup33.svg" alt="">
             <h1>سوالات متداول</h1>
+            <img class="background-2 basic-page" src="./img/section1/MaskGrou34.svg" alt="">
         </section>
 
+        <!-- section 2 -->
         <section class="section-2 ">
-            <div class="container-buttons">
+            <div>
                 <h1>سوال شما درباره کدام سرویس است؟</h1>
-                <div>
-                    <button class="basic">
+            </div>
+            <div class="container-buttons">
+                <div class="button-group">
+                    <button>
                         <img src="./img/section2/Group-4137.svg" alt="drugstore" />داروخانه
                     </button>
                     <button>
                         <img src="./img/section2/computer-(1).svg" alt="store" />فروشگاه
                     </button>
-                    <!-- <label for="">به زودی</label> -->
-                    <button>
-                        <img src="./img/section2/doctor-(3).svg" alt="doctor visit" />ویزیت آنلاین
-                    </button>
-                    <!-- <label for="">به زودی</label> -->
-                    <button>
-                        <img src="./img/section2/Group-4194.svg" alt="take turns" />ویزیت آنلاین
-                    </button>
                 </div>
-
+                <div class="button-group">
+                    <div>
+                        <label for="" class="basic-page">به زودی</label>
+                        <button>
+                            <img src="./img/section2/doctor-(3).svg" alt="doctor visit" />ویزیت آنلاین
+                        </button>
+                    </div>
+                    <div>
+                        <label for="" class="basic-page">به زودی</label>
+                        <button>
+                            <img src="./img/section2/Group-4194.svg" alt="take turns" />ویزیت آنلاین
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="list">
+            <div class="list-group">
                 <ul>
                     <li>
                         <img src="./img/section2/24 - basic - plus.svg" alt="">
@@ -86,8 +109,8 @@
                             خیر، ما هم اکنون در تهران و کرج در حال فعالیت هستیم.
                         </li>
                     </ul>
-                    <hr>
-                    <li>
+                    <hr class="basic-page">
+                    <li class="basic-page">
                         <img src="./img/section2/24 - basic - plus.svg" alt="">
                         هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟
                     </li>
@@ -95,6 +118,7 @@
             </div>
         </section>
 
+        <!-- section 3 -->
         <section class="section-3 container">
             <div class="information">
                 <h1>پشتیبانی درمانیتو</h1>
@@ -108,46 +132,64 @@
     </main>
 
     <footer>
-        <div>
+        <div class="col-1">
             <div class="logo-footer">
-                <img src="./img/footer/Group 123.svg" alt="logo" />
-                <div>
-                    <h1>درمانیتو</h1>
-                    <p>همراه شما در درمان</p>
-                </div>
+                <img src="./img/footer/Group 152.svg" alt="logo" />
             </div>
-            <p style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
-            <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
-            <a href="#"><img src="./img/footer/linkedin.svg" /></a>
-            <a href="#"><img src="./img/footer/Icons-Facebook.svg" /></a>
-            <a href="#"><img src="./img/footer/Icons-Facebook(2).svg" /></a>
+            <div>
+                <p style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+                <p>تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
+            </div>
+            <div>
+                <a href="#"><img src="./img/footer/linkedin.svg" /></a>
+                <a href="#"><img src="./img/footer/Icons-Facebook.svg" /></a>
+                <a href="#"><img src="./img/footer/Icons-Facebook(2).svg" /></a>
+            </div>
         </div>
-        <div class="info-footer">
-            <h4>خدمات درمانیتو</h4>
-            <a style="
-              color: var(--color5);
-              padding-right: 1rem;
-              border-right: solid var(--color3) 3px;
-            " href="#">
-                داروخانه آنلاین
-            </a>
-            <a href="#">فروشگاه آنلاین</a>
-            <a href="#">ویزیت آنلاین</a>
-            <a href="#">پرونده پزشکی</a>
+        <div class="container-footer basic-page">
+            <div class="col-2 basic-page">
+                <h4>خدمات درمانیتو</h4>
+                <a href="#">داروخانه آنلاین</a>
+                <a href="#">فروشگاه آنلاین</a>
+                <a href="#">ویزیت آنلاین</a>
+                <a href="#">پرونده پزشکی</a>
+            </div>
+            <div class="col-3 basic-page">
+                <h4>صفحات درمانیتو</h4>
+                <a href="#">تماس با ما</a>
+                <a href="#">درباره ما</a>
+                <a href="./question.html">سوالات متداول</a>
+                <a href="#">قوانین و شرایط</a>
+            </div>
         </div>
-        <div class="info-footer">
-            <h4>صفحات درمانیتو</h4>
-            <a href="#">تماس با ما</a>
-            <a href="#">درباره ما</a>
-            <a href="./question.html">سوالات متداول</a>
-            <a href="#">قوانین و شرایط</a>
-        </div>
-        <div class="div-footer">
+        <div class="col-4 basic-page">
             <h4>دانلود درمانیتو</h4>
             <button><img src="./img/footer/Group5367f.svg" /></button>
             <button><img src="./img/footer/Group1.svg" /></button>
         </div>
     </footer>
+
+    <script>
+        function myFunction1() {
+            var menu = document.getElementById("myLinks");
+            var close = document.getElementById("close");
+            var open = document.getElementById("open");
+
+            menu.style.display = "block"
+            open.style.display = "none";
+            close.style.display = 'block';
+        }
+
+        function myFunction2() {
+            var menu = document.getElementById("myLinks");
+            var close = document.getElementById("close");
+            var open = document.getElementById("open");
+
+            menu.style.display = "none"
+            open.style.display = "block";
+            close.style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
