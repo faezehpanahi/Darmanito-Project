@@ -14,47 +14,50 @@
 </head>
 
 <body>
-  <div class="topnav">
-    <div class="logo">
-      <img src="../../img/Group 152.svg" alt="logo" />
-    </div>
+  <nav>
+    <div class="topnav">
+      <div class="logo">
+        <img src="../../img/logo.svg" alt="logo" />
+      </div>
 
-    <div id="myLinks" class="my-links">
-      <ul class="nav-list">
-        <li><a href="./index.html">صفحه اصلی</a></li>
-        <li>
-          <a href="#">در باره ما</a>
-        </li>
-        <li>
-          <a href="../contact-us/contact-us.html">تماس با ما</a>
-        </li>
-        <li">
-          <a href="../drugstore/drugstore.html">عضویت داروخانه‌ها</a>
+      <div id="myLinks" class="my-links">
+        <ul class="nav-list">
+          <li><a href="./index.html">صفحه اصلی</a></li>
+          <li>
+            <a href="#">در باره ما</a>
           </li>
-          <li class="list-item">
-            <a href="../questions/question.html">سوالات متداول</a>
+          <li>
+            <a href="../contact-us/contact-us.html">تماس با ما</a>
           </li>
-          <li class="list-item">
-            <a href="#">قوانین و شرایط</a>
-          </li>
-      </ul>
-      <hr class="list-item">
+          <li">
+            <a href="../drugstore/drugstore.html">عضویت داروخانه‌ها</a>
+            </li>
+            <li class="list-item">
+              <a href="../questions/question.html">سوالات متداول</a>
+            </li>
+            <li class="list-item">
+              <a href="#">قوانین و شرایط</a>
+            </li>
+        </ul>
+        <hr class="list-item">
+        <div>
+          <button class="nav-button">دانلود درمانیتو</button>
+        </div>
+      </div>
+
       <div>
-        <button class="nav-button">دانلود درمانیتو</button>
+        <a id="open" class="icon open" onclick="myFunction1()">
+          <img class="menu-icons" src="../../img/menu.svg" alt="menu">
+        </a>
+      </div>
+      <div>
+        <a id="close" class="icon close" onclick="myFunction2()">
+          <img class="menu-icon " src="../../img/plus.svg" alt="close">
+        </a>
       </div>
     </div>
+  </nav>
 
-    <div>
-      <a id="open" class="icon open" onclick="myFunction1()">
-        <img class="menu-icons open" src="../../img/24 - basic - menu.svg" alt="">
-      </a>
-    </div>
-    <div>
-      <a id="close" class="icon close" onclick="myFunction2()">
-        <img class="menu-icon " src="../../img/24 - basic - plus.svg" alt="">
-      </a>
-    </div>
-  </div>
 
   <main>
     <!-- section 1 -->
@@ -78,7 +81,7 @@
     <!-- section 2 -->
     <section class="section-2">
       <div class="img-group">
-        <img src="../../img/Group 5535.svg" alt="">
+        <img src="../../img/videoPlayer.svg" alt="video">
       </div>
       <div class="container-group">
         <h1 class="basic-page">درباره درمانیتو</h1>
@@ -93,25 +96,25 @@
         <div class="span-group">
           <span>
             <button class="basic-page">
-              <img src="../../img/Group-5190.svg" />
+              <img src="../../img/quick_search.svg" />
             </button>
             <p class="basic-page">جستجو سریع</p>
           </span>
           <span>
             <button class="basic-page">
-              <img src="../../img/Group-1.svg" />
+              <img src="../../img/efficient.svg" />
             </button>
             <p class="basic-page">به صرفه</p>
           </span>
           <span>
             <button class="basic-page">
-              <img src="../../img/Group-5191.svg" />
+              <img src="../../img/easy.svg" />
             </button>
             <p class="basic-page">راحت</p>
           </span>
           <span>
             <button class="basic-page">
-              <img src="../../img/Group-5192.svg" />
+              <img src="../../img/search.svg" />
             </button>
             <p class="basic-page">جستجو سریع</p>
           </span>
@@ -130,18 +133,18 @@
         <div class="container-buttons">
           <div class="button-group">
             <button class="basic">
-              <img src="../../img/Group-4137.svg" alt="drugstore" />داروخانه
+              <img src="../../img/drugstore.svg" alt="drugstore" />داروخانه
             </button>
             <button>
-              <img src="../../img/computer-(1).svg" alt="store" />فروشگاه
+              <img src="../../img/store.svg" alt="store" />فروشگاه
             </button>
           </div>
           <div class="button-group">
             <button>
-              <img src="../../img/doctor-(3).svg" alt="doctor visit" />ویزیت آنلاین
+              <img src="../../img/online_visit.svg" alt="doctor visit" />ویزیت آنلاین
             </button>
             <button>
-              <img src="../../img/Group-4194.svg" alt="take turns" />نوبت دهی آنلاین
+              <img src="../../img/rank.svg" alt="take turns" />نوبت دهی آنلاین
             </button>
           </div>
         </div>
@@ -163,13 +166,13 @@
           <div class="step-table">
             <div class="img-steps">
               <div>
-                <img src="../../img/Group 5539.svg">
+                <img src="../../img/step1.svg">
               </div>
               <div class="line-drow">
-                <img src="../../img/Group 5539.svg">
+                <img src="../../img/step1.svg">
               </div>
               <div>
-                <img src="../../img/Group 5153.svg">
+                <img src="../../img/step2.svg">
               </div>
             </div>
 
@@ -204,26 +207,24 @@
         <p class="basic-page">برای دریافت لینک دانلود شماره خود را وارد کنید.</p>
         <p class="responsive-page">شما میتونید شماره خودتون یا دوست خودتون رو وارد کنید تا لینک دانلود پیامک بشه</p>
         <form action="">
-          <input class="text basic-page" type="text" onfocus="this.value=''"
-            value="شماره همراه را وارد کنید 900 36 61 0912" />
-          <input class="text responsive-page" type="text" onfocus="this.value=''"
-            value="شماره همراه را وارد کنید    " />
+          <input class="text basic-page" type="text" placeholder="شماره همراه را وارد کنید 900 36 61 0912" />
+          <input class="text responsive-page" type="text" placeholder="شماره همراه را وارد کنید    " />
           <input class="button" type="button" value="بفرست" />
         </form>
         <div class="app-buttons">
           <button class="app-button basic-page">
-            <img src="../../img/Group5519f.svg" alt="" />
+            <img src="../../img/android.svg" alt="" />
           </button>
           <button class="app-button">
-            <img src="../../img/Group5367f.svg" alt="" />
+            <img src="../../img/bazar_app.svg" alt="" />
           </button>
           <button class="app-button">
-            <img src="../../img/Group1.svg" alt="" />
+            <img src="../../img/sib_app.svg" alt="" />
           </button>
         </div>
       </div>
       <div class="section4-image">
-        <img src="../../img/MaskGroup32.svg" alt="app phone" />
+        <img src="../../img/phone.svg" alt="app phone" />
       </div>
     </section>
 
@@ -241,15 +242,13 @@
             کار
             خودتون تغییری ایجاد کنید درمانیتو منتظر شماست </p>
           <form action="">
-            <input class="text basic-page" type="text" onfocus="this.value=''"
-              value="شماره همراه را وارد کنید 900 36 61 0912" />
-            <input class="text responsive-page" type="text" onfocus="this.value=''"
-              value="شماره همراه را وارد کنید    " />
+            <input class="text basic-page" type="text" placeholder="شماره همراه را وارد کنید 900 36 61 0912" />
+            <input class="text responsive-page" type="text" placeholder="شماره همراه را وارد کنید    " />
             <input class="button" type="button" value="ثبت نام سریع" />
           </form>
         </div>
         <div class=" section5-image">
-          <img src="../../img/health__two_color(1).svg" alt="healthy" />
+          <img src="../../img/health_doctor.svg" alt="healthy" />
         </div>
       </div>
     </section>
@@ -261,7 +260,7 @@
         <p>پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
       </div>
       <button>
-        <img src="../../img/Path 15760.svg" />
+        <img src="../../img/backup.svg" />
         پشتیبانی : 44219671-021
       </button>
     </section>
@@ -270,7 +269,7 @@
   <footer>
     <div class="col-1">
       <div class="logo-footer">
-        <img src="../../img/Group 152.svg" alt="logo" />
+        <img src="../../img/logo.svg" alt="logo" />
       </div>
       <div>
         <p style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
@@ -278,8 +277,8 @@
       </div>
       <div>
         <a href="#"><img src="../../img/linkedin.svg" /></a>
-        <a href="#"><img src="../../img/Icons-Facebook.svg" /></a>
-        <a href="#"><img src="../../img/Icons-Facebook(2).svg" /></a>
+        <a href="#"><img src="../../img/twiter.svg" /></a>
+        <a href="#"><img src="../../img/instagram.svg" /></a>
       </div>
     </div>
     <div class="container-footer basic-page">
@@ -300,8 +299,8 @@
     </div>
     <div class="col-4 basic-page">
       <h4>دانلود درمانیتو</h4>
-      <button><img src="../../img/Group5367f.svg" /></button>
-      <button><img src="../../img/Group1.svg" /></button>
+      <button><img src="../../img/bazar_app.svg" /></button>
+      <button><img src="../../img/sib_app.svg" /></button>
     </div>
   </footer>
 

@@ -266,8 +266,8 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: url(../../img/Group5423.svg) no-repeat -1%, 
-    url(../../img/Group5422.svg) no-repeat 101% ,
+    background: url(../../img/Semicircular_left.svg) no-repeat -1%, 
+    url(../../img/Semicircular_right.svg) no-repeat 101% ,
     var(--color1);
     color: white;
     margin: 7rem 0;
