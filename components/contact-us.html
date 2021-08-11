@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="../assets/style/contact-us.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img class="navbar__logo__img" src="../assets/img/logo.svg" alt="logo" />
+        </div>
+
+        <div id="myLinks" class="navbar__links">
+            <ul class="navbar__list">
+                <li class="navbar__list__item"><a href="../index.html">صفحه اصلی</a></li>
+                <li class="navbar__list__item">
+                    <a href="#">در باره ما</a>
+                </li>
+                <li class="navbar__list__item">
+                    <a href="./contact-us.html">تماس با ما</a>
+                </li class="navbar__list__item">
+                <li">
+                    <a href="./drugstore.html">عضویت داروخانه‌ها</a>
+                    </li>
+                    <li class="navbar__list__item navbar__listItem">
+                        <a href="./question.html">سوالات متداول</a>
+                    </li>
+                    <li class="navbar__list__item navbar__listItem">
+                        <a href="#">قوانین و شرایط</a>
+                    </li>
+            </ul>
+            <hr class="navbar__list__item navbar__listItem">
+            <div>
+                <button class="navbar__links__button">دانلود درمانیتو</button>
+            </div>
+        </div>
+
+        <div>
+            <a id="open" class="navbar__icon navbar__icon--open" onclick="myFunction1()">
+                <img class="menu-icons" src="../assets/img/menu.svg" alt="menu">
+            </a>
+        </div>
+        <div>
+            <a id="close" class="navbar__icon navbar__icon--close" onclick="myFunction2()">
+                <img class="menu-icon " src="../assets/img/plus.svg" alt="close">
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="topic">
+            <!-- <img class="background-1 basic-page" src="./img/section1/background_header_left.svg" alt=""> -->
+            <h1 class="topic__h1">تماس با ما</h1>
+            <!-- <img class="background-2 basic-page" src="./img/section1/background_header_right.svg" alt=""> -->
+        </section>
+
+        <!-- section 2 -->
+        <section class="contact">
+            <div class="contact__form-table">
+                <form class="contact__form" action="post">
+                    <label class="contact__label" for="name">نام و نام خانوادگی</label>
+                    <br>
+                    <input class="contact__input" id='name' type="text" placeholder="ایمیل یا شماره همراه">
+                    <br>
+                    <label class="contact__label" for="email">ایمیل یا شماره همراه</label>
+                    <br>
+                    <input class="contact__input" id='email' type="text" placeholder="ایمیل یا شماره همراه">
+                    <br>
+                    <label class="contact__label" for="messege">پیام شما</label>
+                    <br>
+                    <textarea class="contact__textarea" placeholder="ایمیل یا شماره همراه" id="messege"></textarea>
+                    <br>
+                    <input class="contact__input contact__input--button-submit" type="submit" value="ارسال پیام">
+                </form>
+            </div>
+            <div class="contact__map-table">
+                <div class="contact__google-map">
+                    <img src="../assets/img/Map.svg" alt="map">
+                </div>
+                <div class="contact__map-info">
+                    <div class="contact__info">
+                        <div>
+                            <p>ایمیل</p>
+                            <p class="contact__detail">info@nahiraTech.com</p>
+                        </div>
+                        <div>
+                            <p>شماره ثابت</p>
+                            <p class="contact__detail">۰۲۱-۴۴۲۱۹۶۷۱</p>
+                        </div>
+                    </div>
+                    <div class="contact__info">
+                        <p>آدرس</p>
+                        <p>تهران، طرشت، خیابان شهید چوب تراش، خیابان شهید حسین مردی، بن‌بست پنجم، پلاک 15، واحد 1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 3 -->
+        <section class="support">
+            <div class="support__info">
+                <h1 class="support__h1">پشتیبانی درمانیتو</h1>
+                <p class="support__p">پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
+            </div>
+            <button class="support__button">
+                <img src="../assets/img/backup.svg" />
+                پشتیبانی : 44219671-021
+            </button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__col-1">
+            <div class="footer__logo">
+                <img src="../assets/img/logo.svg" alt="logo" />
+            </div>
+            <div class="footer__col-1__container">
+                <p class="footer__col-1__p" style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+                <p class="footer__col-1__P">تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
+            </div>
+            <div class="footer__col-1__links">
+                <a href="#"><img src="../assets/img/linkedin.svg" /></a>
+                <a href="#"><img src="../assets/img/twiter.svg" /></a>
+                <a href="#"><img src="../assets/img/instagram.svg" /></a>
+            </div>
+        </div>
+        <div class="footer__container basic-page">
+            <div class="footer__col-2 basic-page">
+                <h4>خدمات درمانیتو</h4>
+                <a href="#">داروخانه آنلاین</a>
+                <a href="#">فروشگاه آنلاین</a>
+                <a href="#">ویزیت آنلاین</a>
+                <a href="#">پرونده پزشکی</a>
+            </div>
+            <div class="footer__col-3 basic-page">
+                <h4>صفحات درمانیتو</h4>
+                <a href="#">تماس با ما</a>
+                <a href="#">درباره ما</a>
+                <a href="./question.html">سوالات متداول</a>
+                <a href="#">قوانین و شرایط</a>
+            </div>
+        </div>
+        <div class="footer__col-4 basic-page">
+            <h4>دانلود درمانیتو</h4>
+            <button class="footer__button"><img src="../assets/img/bazar_app.svg" /></button>
+            <button class="footer__button"><img src="../assets/img/sib_app.svg" /></button>
+        </div>
+    </footer>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
