@@ -173,12 +173,12 @@
     align-items: center;
   }
 
-  .health__drugstore__group-2{
+  .health__drugstore__group-second{
     margin: 2rem 0;
     filter: opacity(70%);
   }
 
-  .health__drugstore__group-3{
+  .health__drugstore__group-third{
     filter: opacity(50%);
   }
 
@@ -191,16 +191,16 @@
       padding-top:5px ;
   }
 
-  .health__drugstore__group-1 div,
-  .health__drugstore__group-2 div,
-  .health__drugstore__group-3 div{
+  .health__drugstore__group-first div,
+  .health__drugstore__group-second div,
+  .health__drugstore__group-third div{
     display: flex;
     flex-direction: row;
   }
 
-  .health__drugstore__group-1,
-  .health__drugstore__group-2,
-  .health__drugstore__group-3{
+  .health__drugstore__group-first,
+  .health__drugstore__group-second,
+  .health__drugstore__group-third{
       border-radius: 25px;
       box-shadow: 0 0 30px 0 var(--color2);    
       padding: 10px;
@@ -219,58 +219,58 @@
     padding-top:5px ;
 } */
 
-.health__drugstore__group-1{
+.health__drugstore__group-first{
   width: 438px;
   height: 125px;
 }
 
-  .health__drugstore__group-1 h2{
+  .health__drugstore__group-first h2{
     font-size: 20px;
     
   }
 
-  .health__drugstore__group-1 p{
+  .health__drugstore__group-first p{
     font-size: 12px;
     padding-right: 0.5rem;
   }
 
-  .health__drugstore__group-1 label{
+  .health__drugstore__group-first label{
     width: 80px;
     height: 28px;
     font-size: 12px;
   }
 
-  .health__drugstore__group-2, 
-  .health__drugstore__group-3{
+  .health__drugstore__group-second, 
+  .health__drugstore__group-third{
     width: 306px;
     height: 87px;
   }
 
-  .health__drugstore__group-2 .health__profile, 
-  .health__drugstore__group-3 .health__profile{
+  .health__drugstore__group-second .health__profile, 
+  .health__drugstore__group-third .health__profile{
     width: 52px;
     height: 52px; 
   }
 
-  .health__drugstore__group-2 h2, 
-  .health__drugstore__group-3 h2{
+  .health__drugstore__group-second h2, 
+  .health__drugstore__group-third h2{
     font-size: 13px;
   }
 
-  .health__drugstore__group-2 p, 
-  .health__drugstore__group-3 p{
+  .health__drugstore__group-second p, 
+  .health__drugstore__group-third p{
     font-size: 8px;
     padding-right: 0.5rem;
   }
 
-  .health__drugstore__group-3 label{
+  .health__drugstore__group-third label{
     width: 55px;
     height: 19px;
     font-size: 8px;
   }
 
   /* section  2*/
-  .user{
+  .users{
     width: auto;
     height: 120px;
     display: flex;
@@ -284,11 +284,19 @@
     padding: 1.5rem 9rem;
   }
 
-  .user p{
+  .users div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 10px;
+    padding-top: 0.5rem;
+  }
+
+  .users__drugstore{
     font-size: 16px;
   }
 
-  .user__count{
+  .users__count{
     font-size: 36px;
   }
 
@@ -398,7 +406,7 @@
     padding: 10px;
   }
   
-  .footer__col-1__p {
+  .footer__col-logo__p {
     font-size: 14px;
   }
   
@@ -406,7 +414,7 @@
     color: var(--color6);
   }
   
-  .footer__col-1{
+  .footer__col-logo{
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -424,8 +432,8 @@
    padding-right: 3rem;
   }
   
-  .footer__col-2,
-  .footer__col-3{
+  .footer__col-online,
+  .footer__col-about{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -438,10 +446,10 @@
   }
   
   .footer__button {
-    width: 180px;
+    width: 160px;
     height: 55px;
     background-color: #000;
-    margin-right: 10px;
+    /* margin-right: 10px; */
   }
   
   .footer__button img{
@@ -554,7 +562,7 @@ a.navbar__icon--close {
 }
 
 .navbar__links {
- width: 375px;
+ width: 100%;
  height:520px;
  background-color: white;
  display: none;
@@ -605,7 +613,7 @@ a.navbar__icon--close {
     width: 100%;
   }
   
-  .health__drugstore__group-1{
+  .health__drugstore__group-first{
     width: 100%;
 }
 
@@ -614,13 +622,13 @@ a.navbar__icon--close {
     /* padding-right: 2rem; */
   }
 
-  .health__drugstore__group-2,
-  .health__drugstore__group-3{
+  .health__drugstore__group-second,
+  .health__drugstore__group-third{
     display: none;
   }
 
   /* section 2 */
-  .user{
+  .users{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -659,7 +667,7 @@ a.navbar__icon--close {
       display: none;
     }
   
-    .footer__col-1 div:last-child{
+    .footer__col-logo div:last-child{
       display: flex;
       justify-content: space-around;
     }
@@ -689,26 +697,26 @@ a.navbar__icon--close {
     padding: 1.5rem 2rem 0;
   }
 
-  .health__drugstore__group-1{
+  .health__drugstore__group-first{
     height: 84px;
   }
 
-  .health__drugstore__group-1 .health__profile{
+  .health__drugstore__group-first .health__profile{
     width: 50px;
     height: 50px;
   }
 
-  .health__drugstore__group-1 .health__label{
+  .health__drugstore__group-first .health__label{
     width: 53px;
     height: 18px;
     font-size: 8px;
   }
 
-  .health__drugstore__group-1 .health__h2{
+  .health__drugstore__group-first .health__h2{
     font-size: 13px;
   }
 
-  .health__drugstore__group-1 p{
+  .health__drugstore__group-first p{
     font-size: 8px;
   }
 
@@ -736,7 +744,7 @@ a.navbar__icon--close {
   }
 
    /* section 2 */
-  .user p{
+  .users p{
     font-size: 14px;
   }
 
@@ -812,10 +820,10 @@ a.navbar__icon--close {
 
 @media screen and (max-width:411px){
   /* section 2 */
-  .user {
+  .users {
     padding: 0;
   }
-  .user__count{
+  .users__count{
     font-size: 24px;
   }
   

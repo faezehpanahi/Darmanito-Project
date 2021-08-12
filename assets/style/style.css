@@ -16,7 +16,7 @@
 .responsive-page{
   display: none;
 }
-.navbar__listItem{
+.navbar__listItem--responsive{
   display: none;
 }
 
@@ -145,17 +145,17 @@ a.navbar__icon--close{
   margin: 20px 0 0 10px;
 }
 
-.darmanitoApp__container__buttons_1 {
+.darmanitoApp__container__buttons_dowload {
   color: #fff;
   background-color: var(--color1);
 }
 
-.darmanitoApp__container__buttons_2 {
+.darmanitoApp__container__buttons_member {
   border: solid var(--color1) 2px;
   background-color: #fff;
 }
 
-.darmanitoApp__container__buttons_2 a{
+.darmanitoApp__container__buttons_member a{
   color: var(--color1);
 }
 
@@ -493,7 +493,7 @@ a.navbar__icon--close{
   padding: 10px;
 }
 
-.footer__col-1__p {
+.footer__col-logo__p {
   font-size: 14px;
 }
 
@@ -501,7 +501,7 @@ a.navbar__icon--close{
   color: var(--color6);
 }
 
-.footer__col-1{
+.footer__col-logo{
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -519,8 +519,8 @@ a.navbar__icon--close{
  padding-right: 3rem;
 }
 
-.footer__col-2,
-.footer__col-3{
+.footer__col-online,
+.footer__col-about{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -533,10 +533,10 @@ a.navbar__icon--close{
 }
 
 .footer__button {
-  width: 180px;
+  width: 160px;
   height: 55px;
   background-color: #000;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .footer__button img{
@@ -544,6 +544,17 @@ a.navbar__icon--close{
 }
 
 /* media query */
+@media screen and (max-width : 2000px) and (min-width : 850px) {
+  .navbar__listItem--basic{
+    display: block;
+  }
+
+  .navbar__icon--open,
+  .navbar__icon--close{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1470px){
   /* section 4 */
   .download__img img{
@@ -741,7 +752,7 @@ a.navbar__icon--close{
   }
 
 @media screen and (max-width: 850px){
-  .navbar__listItem{
+  .navbar__listItem--responsive{
     display: block;
   }
 
@@ -761,7 +772,7 @@ a.navbar__icon--close{
   }
   
   .navbar__links {
-    width: 375px;
+    width: 100%;
     height:520px;
     background-color: white;
     display: none;
@@ -958,7 +969,7 @@ a.navbar__icon--close{
       display: none;
     }
   
-    .footer__col-1 div:last-child{
+    .footer__col-logo div:last-child{
       display: flex;
       justify-content: space-around;
     }
