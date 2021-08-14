@@ -545,14 +545,14 @@ a.navbar__icon--close{
 
 /* media query */
 @media screen and (max-width : 2000px) and (min-width : 850px) {
-  .navbar__listItem--basic{
+  /* .navbar__listItem--basic{
     display: block;
   }
 
   .navbar__icon--open,
   .navbar__icon--close{
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 1470px){
@@ -769,6 +769,7 @@ a.navbar__icon--close{
     position: absolute;
     left: 5rem;
     top: 2rem;
+    transform: rotate(45deg);
   }
   
   .navbar__links {

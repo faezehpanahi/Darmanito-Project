@@ -379,6 +379,7 @@ a.navbar__icon--close {
  position: absolute;
  left: 5rem;
  top: 2rem;
+ transform: rotate(45deg);
 }
 
 .navbar__links {
