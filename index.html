@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- style.css -->
+  <link rel="stylesheet" href="./assets/style/style.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <img class="navbar__logo__img" src="./assets/img/logo.svg" alt="logo" />
+    </div>
+
+    <div id="myLinks" class="navbar__links">
+      <ul class="navbar__list">
+        <li class="navbar__list__item navbar__listItem--basic"><a href="./index.html">صفحه اصلی</a></li>
+        <li class="navbar__list__item navbar__listItem--basic">
+          <a href="#">در باره ما</a>
+        </li>
+        <li class="navbar__list__item navbar__listItem--basic">
+          <a href="./components/html/contact-us.html">تماس با ما</a>
+        </li class="navbar__list__item navbar__listItem--basic">
+        <li>
+          <a href="./components/html/drugstore.html">عضویت داروخانه‌ها</a>
+        </li>
+        <li class="navbar__list__item navbar__listItem--responsive">
+          <a href="./components/html/question.html">سوالات متداول</a>
+        </li>
+        <li class="navbar__list__item navbar__listItem--responsive">
+          <a href="#">قوانین و شرایط</a>
+        </li>
+      </ul>
+      <hr class="navbar__list__item navbar__listItem--responsive">
+      <div>
+        <button class="navbar__links__button">دانلود درمانیتو</button>
+      </div>
+    </div>
+
+    <div>
+      <a id="open" class="navbar__icon navbar__icon--open" onclick="myFunction1()">
+        <img class="menu-icons" src="./assets/img/menu.svg" alt="menu">
+      </a>
+    </div>
+    <div>
+      <a id="close" class="navbar__icon navbar__icon--close" onclick="myFunction2()">
+        <img class="menu-icon " src="./assets/img/plus.svg" alt="close">
+      </a>
+    </div>
+  </nav>
+
+
+  <main>
+    <!-- section 1 -->
+    <section class="darmanitoApp">
+      <div class="darmanitoApp__container">
+        <h1 class="darmanitoApp__container__h1">اپلیکیشن درمانیتو</h1>
+        <p class="darmanitoApp__container__p basic-page">درمانیتو، سامانه هوشمند و سلامت</p>
+        <p class="darmanitoApp__container__p responsive-page">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+        <div class="darmanitoApp__container__buttons">
+          <button class="darmanitoApp__container__buttons_dowload basic-page">دانلود درمانیتو</button>
+          <button class="darmanitoApp__container__buttons_dowload responsive-page">دانلود مستقیم اپ</button>
+          <button class="darmanitoApp__container__buttons_member"><a href="../drugstore/drugstore.html">عضویت
+              داروخانه‌ها</a></button>
+        </div>
+
+      </div>
+      <div class="darmanitoApp__img">
+        <img src="./assets/img/doctor_two_color.svg" alt="doctor" />
+      </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="aboutDarmanito">
+      <div class="aboutDarmanito__img">
+        <img src="./assets/img/videoPlayer.svg" alt="video">
+      </div>
+      <div class="aboutDarmanito__container">
+        <h1 class="aboutDarmanito__container__h1 basic-page">درباره درمانیتو</h1>
+        <h1 class="aboutDarmanito__container__h1 responsive-page">درمانیتو چی هست؟</h1>
+        <p class="aboutDarmanito__container__p basic-page">
+          درمانیتو یک سامانه است که امکان سفارش دارو، محصولات آرایشی بهداشتی،
+          نوبت‌گیری و مشاوره پزشکان را به راحتی و به صورت آنلاین فراهم کرده
+          است.
+        </p>
+        <p class="aboutDarmanito__container__p responsive-page">درمانیتو یک سوپر اپلیکیشن هست که سعی داره با سرویس های
+          متفاوتش روند درمان شمارو سریع
+          تر کنه؛شما با درمانیتو میتونید نسخه خودتون رو برای تمام داروخانه های اطراف خودتون بفرستید</p>
+        <div class="aboutDarmanito__container__spanGroup">
+          <span>
+            <button class="basic-page">
+              <img src="./assets/img/quick_search.svg" />
+            </button>
+            <p class="basic-page">جستجو سریع</p>
+          </span>
+          <span>
+            <button class="basic-page">
+              <img src="./assets/img/efficient.svg" />
+            </button>
+            <p class="basic-page">به صرفه</p>
+          </span>
+          <span>
+            <button class="basic-page">
+              <img src="./assets/img/easy.svg" />
+            </button>
+            <p class="basic-page">راحت</p>
+          </span>
+          <span>
+            <button class="basic-page">
+              <img src="./assets/img/search.svg" />
+            </button>
+            <p class="basic-page">جستجو سریع</p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="facility">
+      <div class="facility__header">
+        <h1 class="facility__h1 basic-page">امکانات درمانیتو</h1>
+        <h1 class="facility__h1 responsive-page">سرویس های درمانیتو</h1>
+      </div>
+      <div class="facility__container">
+        <div class="facility__buttonGroup">
+          <div class="facility__buttons">
+            <button class="basic">
+              <img src="./assets/img/drugstore.svg" alt="drugstore" />داروخانه
+            </button>
+            <button>
+              <img src="./assets/img/store.svg" alt="store" />فروشگاه
+            </button>
+          </div>
+          <div class="facility__buttons">
+            <button>
+              <img src="./assets/img/online_visit.svg" alt="doctor visit" />ویزیت آنلاین
+            </button>
+            <button>
+              <img src="./assets/img/rank.svg" alt="take turns" />نوبت دهی آنلاین
+            </button>
+          </div>
+        </div>
+        <div class="facility__tables">
+          <div class="facility__info">
+            <h3>داروخانه آنلاین</h3>
+            <p class="basic-page">
+              در سرویس داروخانه شما می‌توانید نسخه دارویی یا محصول بهداشتی خودتون
+              رو برای پیدا شدن به داروخانه و فروشگاه‌ها سفارش بدهید.
+            </p>
+            <p class="responsive-page">شما با درمانیتو میتونید نسخه و دارو خودتون رو اول برای تمام داروخانه های اطراف
+              خودتون
+              و
+              اگر پیدا نشد در تمام
+              داروخانه ها ارسال کنید و در کمترین زمان دارو شما پیدا می شود
+            </p>
+          </div>
+          <div class="facility__stepTable">
+            <div class="facility__stepTable-imgSteps">
+              <div>
+                <img src="./assets/img/step1.svg">
+              </div>
+              <div class="line-drow">
+                <img src="./assets/img/step1.svg">
+              </div>
+              <div>
+                <img src="./assets/img/step2.svg">
+              </div>
+            </div>
+
+            <div class="facility__stepTable-steps">
+              <p>قدم اول</p>
+              <p>قدم دوم</p>
+              <p> قدم سوم</p>
+            </div>
+
+            <div class="facility__stepTable-containerSteps">
+              <p>
+                وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید.
+              </p>
+              <p>
+                بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید.
+              </p>
+              <p>
+                اگر نتیجه جستوجوی نسخه موفقیت‌آمیز باشه باید منتظر تحویل سفارش
+                باشید.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+    <section class="download">
+      <div class="download__info">
+        <h1 class="download__h1">دانلود اپلیکیشن درمانیتو</h1>
+        <p class="download__p basic-page">برای دریافت لینک دانلود شماره خود را وارد کنید.</p>
+        <p class="download__p responsive-page">شما میتونید شماره خودتون یا دوست خودتون رو وارد کنید تا لینک دانلود پیامک
+          بشه</p>
+        <form class="download__form" action="">
+          <input class="download__form-text basic-page" type="text"
+            placeholder="شماره همراه را وارد کنید 900 36 61 0912" />
+          <input class="download__form-text responsive-page" type="text" placeholder="شماره همراه را وارد کنید    " />
+          <input class="download__form-button" type="button" value="بفرست" />
+        </form>
+        <div class="download__app-buttons">
+          <button class="download__button basic-page">
+            <img src="./assets/img/android.svg" alt="" />
+          </button>
+          <button class="download__button">
+            <img src="./assets/img/bazar_app.svg" alt="" />
+          </button>
+          <button class="download__button">
+            <img src="./assets/img/sib_app.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="download__img">
+        <img src="./assets/img/phone.svg" alt="app phone" />
+      </div>
+    </section>
+
+    <!-- section 5 -->
+    <section class="membership">
+      <div class="membership__card">
+        <div class="membership__info">
+          <h1 class="membership__h1 basic-page">عضویت داروخانه یا مرکز درمانی</h1>
+          <h1 class="membership__h1 responsive-page">من داروخانه یا مرکز درمانی هستم</h1>
+          <p class="membership__p basic-page">
+            اکر به عنوان داروخانه یا مرکز درمانی قصد دارید در روند درمان و کسب
+            و کار خودتان تغییری ایجاد کنید درمانیتو منتظر شماست.
+          </p>
+          <p class="membership__p responsive-page">اگر شما داروخانه یا مرکز درمانی هستید و قصد دارید در روند درمان هموطن
+            هامون و کسب
+            کار
+            خودتون تغییری ایجاد کنید درمانیتو منتظر شماست </p>
+          <form class="membership__form" action="">
+            <input class="membership__form__text basic-page" type="text"
+              placeholder="شماره همراه را وارد کنید 900 36 61 0912" />
+            <input class="membership__form__text responsive-page" type="text"
+              placeholder="شماره همراه را وارد کنید    " />
+            <input class="membership__form__button" type="button" value="ثبت نام سریع" />
+          </form>
+        </div>
+        <div class="membership__img">
+          <img src="./assets/img/health_doctor.svg" alt="healthy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- section 6 -->
+    <section class="support">
+      <div class="support__info">
+        <h1 class="support__h1">پشتیبانی درمانیتو</h1>
+        <p class="support__p">پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
+      </div>
+      <button class="support__button">
+        <img src="./assets/img/backup.svg" />
+        پشتیبانی : 44219671-021
+      </button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__col-logo">
+      <div class="footer__logo">
+        <img src="./assets/img/logo.svg" alt="logo" />
+      </div>
+      <div class="footer__col-logo__container">
+        <p class="footer__col-logo__p" style="font-weight: bold">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+        <p class="footer__col-logo__P">تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</p>
+      </div>
+      <div class="footer__col-logo__links">
+        <a href="#"><img src="./assets/img/linkedin.svg" /></a>
+        <a href="#"><img src="./assets/img/twiter.svg" /></a>
+        <a href="#"><img src="./assets/img/instagram.svg" /></a>
+      </div>
+    </div>
+    <div class="footer__container basic-page">
+      <div class="footer__col-online basic-page">
+        <h4>خدمات درمانیتو</h4>
+        <a href="#">داروخانه آنلاین</a>
+        <a href="#">فروشگاه آنلاین</a>
+        <a href="#">ویزیت آنلاین</a>
+        <a href="#">پرونده پزشکی</a>
+      </div>
+      <div class="footer__col-about basic-page">
+        <h4>صفحات درمانیتو</h4>
+        <a href="#">تماس با ما</a>
+        <a href="#">درباره ما</a>
+        <a href="./components/html/question.html">سوالات متداول</a>
+        <a href="#">قوانین و شرایط</a>
+      </div>
+    </div>
+    <div class="footer__col-download basic-page">
+      <h4>دانلود درمانیتو</h4>
+      <button class="footer__button"><img src="./assets/img/bazar_app.svg" /></button>
+      <button class="footer__button"><img src="./assets/img/sib_app.svg" /></button>
+    </div>
+  </footer>
+</body>
+
+<script src="./components/javascript/script.js"></script>
+
+</html>
