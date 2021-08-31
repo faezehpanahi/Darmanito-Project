@@ -16,16 +16,27 @@
       <img class="navbar__logo__img" src="./assets/img/logo.svg" alt="logo" />
     </div>
 
+    <div>
+      <a id="open" class="navbar__icon navbar__icon--open" onclick="myFunction1()">
+        <img class="menu-icon" src="./assets/img/menu.svg" alt="menu">
+      </a>
+    </div>
+
     <div id="myLinks" class="navbar__links">
       <ul class="navbar__list">
-        <li class="navbar__list__item navbar__listItem--basic"><a href="./index.html">صفحه اصلی</a></li>
-        <li class="navbar__list__item navbar__listItem--basic">
+        <div>
+      <a id="close" class="navbar__icon navbar__icon--close" onclick="myFunction2()">
+        <img class="menu-icon " src="./assets/img/plus.svg" alt="close">
+      </a>
+    </div>
+        <li class="navbar__list__item"><a href="./index.html">صفحه اصلی</a></li>
+        <li class="navbar__list__item">
           <a href="#">در باره ما</a>
         </li>
-        <li class="navbar__list__item navbar__listItem--basic">
+        <li class="navbar__list__item">
           <a href="./components/html/contact-us.html">تماس با ما</a>
-        </li class="navbar__list__item navbar__listItem--basic">
-        <li>
+        </li class="navbar__list__item">
+        <li class="navbar__list__item">
           <a href="./components/html/drugstore.html">عضویت داروخانه‌ها</a>
         </li>
         <li class="navbar__list__item navbar__listItem--responsive">
@@ -39,18 +50,7 @@
       <div>
         <button class="navbar__links__button">دانلود درمانیتو</button>
       </div>
-    </div>
-
-    <div>
-      <a id="open" class="navbar__icon navbar__icon--open" onclick="myFunction1()">
-        <img class="menu-icon" src="./assets/img/menu.svg" alt="menu">
-      </a>
-    </div>
-    <div>
-      <a id="close" class="navbar__icon navbar__icon--close" onclick="myFunction2()">
-        <img class="menu-icon " src="./assets/img/plus.svg" alt="close">
-      </a>
-    </div>
+    </div>  
   </nav>
 
 

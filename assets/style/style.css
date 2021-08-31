@@ -80,7 +80,7 @@ form .text:focus {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-right: 15%;
+  margin-right: 11%;
 }
 
 .navbar__list,
@@ -176,7 +176,7 @@ a.navbar__icon--close {
 /* section 2 */
 .aboutDarmanito {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 6.5rem 11rem;
 }
@@ -486,7 +486,7 @@ a.navbar__icon--close {
 
 /* footer */
 .footer {
-  height: 30vh;
+  height:250px;
   padding: 5rem 9rem 5rem 5.5rem;
   display: flex;
   justify-content: space-between;
@@ -505,7 +505,7 @@ a.navbar__icon--close {
 }
 
 .footer__col-logo {
-  height: 100%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -515,11 +515,7 @@ a.navbar__icon--close {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 40%;
-}
-
-.footer__container div {
-  padding-right: 3rem;
+  width: 30%;
 }
 
 .footer__col-online,
@@ -556,15 +552,6 @@ a.navbar__icon--close {
 }
 
 @media screen and (max-width: 1320px) {
-  /* header */
-  .navbar__list {
-    width: 70%;
-  }
-
-  .navbar__links {
-    margin-right: 5%;
-  }
-
   /* section 2 */
   .aboutDarmanito {
     padding: 2.5rem 7rem;
@@ -582,16 +569,6 @@ a.navbar__icon--close {
   /* section 4 */
   .download {
     padding: 1rem 5rem;
-  }
-
-  /* footr */
-  .footer {
-    height: 100%;
-    flex-wrap: wrap;
-  }
-
-  .footer__container {
-    width: 50%;
   }
 }
 
@@ -646,12 +623,21 @@ a.navbar__icon--close {
   .membership__card {
     padding: 1rem 3rem 0;
   }
+
+  /* footer */
+  .footer{
+    padding-right: 3.9rem;
+    padding-left: 3.5rem;
+  }
 }
 
 @media screen and (max-width: 1050px) {
   /* header */
-  .navbar__links {
-    margin-right: 0;
+  .navbar__links{
+    margin-right: 1%;
+  }
+   .navbar__list {
+    width: 60%;
   }
 
   /* section 1 */
@@ -690,10 +676,6 @@ a.navbar__icon--close {
     padding: 0 5rem;
   }
 
-  /* footer */
-  .footer {
-    padding: 5rem 5rem;
-  }
 }
 
 @media screen and (max-width: 950px) {
@@ -750,6 +732,19 @@ a.navbar__icon--close {
   .membership__img img {
     width: 300px;
   }
+
+  /* footer */
+  .footer{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    flex-wrap: wrap;
+  }
+  .footer__col-logo{
+    width: 40%;
+  }
+  .footer__container{
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -772,13 +767,13 @@ a.navbar__icon--close {
     display: none;
     position: absolute;
     left: 3rem;
-    top: 2rem;
+    top: -5rem;
     transform: rotate(45deg);
   }
 
   .navbar__links {
     width: 100%;
-    height: 520px;
+    height: 555px;
     background-color: white;
     display: none;
     flex-direction: column;
@@ -786,6 +781,7 @@ a.navbar__icon--close {
     top: 7rem;
     z-index: 1;
     left: 0;
+    position: fixed;
   }
 
   .navbar__list {
@@ -865,16 +861,6 @@ a.navbar__icon--close {
   /* section 6 */
   .support {
     padding: 0 4rem;
-  }
-}
-
-@media screen and (max-width: 812px) {
-  .footer__container {
-    justify-content: space-between;
-    width: 39%;
-  }
-  .footer__container div {
-    padding-right: 1rem;
   }
 }
 
@@ -981,14 +967,14 @@ a.navbar__icon--close {
   }
 
   /* footer */
-  .footer {
-    height: 30vh;
-  }
   .footer__container a,
   .footer__container h4 {
     display: none;
   }
 
+  .footer__col-logo{
+    width: 100%;
+  }
   .footer__col-logo div:last-child {
     display: flex;
     justify-content: space-around;
