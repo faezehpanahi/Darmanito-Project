@@ -1,1234 +1,1189 @@
 /* font */
+
 @font-face {
-  font-family: "yekan";
-  src: url(../fonts/Yekan/Yekan.ttf);
-  src: url(../fonts/Yekan/Yekan.eot?#iefix) format(“embedded-opentype”),
-    url(../fonts/Yekan/Yekan.woff) format(“woff”),
-    url(../fonts/Yekan/Yekan.ttf) format(“truetype”),
-    url(../fonts/Yekan/Yekan.svg#BYekan) format(“svg”);
-  font-weight: normal;
-  font-style: normal;
+    font-family: "yekan";
+    src: url(../fonts/Yekan/Yekan.ttf);
+    src: url(../fonts/Yekan/Yekan.eot?#iefix) format(“embedded-opentype”), url(../fonts/Yekan/Yekan.woff) format(“woff”), url(../fonts/Yekan/Yekan.ttf) format(“truetype”), url(../fonts/Yekan/Yekan.svg#BYekan) format(“svg”);
+    font-weight: normal;
+    font-style: normal;
 }
 
 .basic-page {
-  display: block;
-}
-.responsive-page {
-  display: none;
-}
-.navbar__listItem--responsive {
-  display: none;
+    display: block;
 }
 
+.responsive-page {
+    display: none;
+}
+
+.navbar__listItem--responsive {
+    display: none;
+}
+
+
 /* color variable */
+
 :root {
-  --color1: #1894ff;
-  --color2: #e6f3ff;
-  --color3: #00de9a;
-  --color4: #f9f9f9;
-  --color5: #2361b5;
-  --color6: #616161;
+    --color1: #1894ff;
+    --color2: #e6f3ff;
+    --color3: #00de9a;
+    --color4: #f9f9f9;
+    --color5: #2361b5;
+    --color6: #616161;
 }
 
 body {
-  direction: rtl;
-  font-family: "yekan";
-  width: 100%;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
+    direction: rtl;
+    font-family: "yekan";
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 button {
-  border-radius: 10px;
-  font-family: "Yekan";
-  font-weight: bold;
-  border: none;
-  font-size: 16px;
+    border-radius: 10px;
+    font-family: "Yekan";
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
 }
 
 form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  height: 4rem;
-  border: none;
-  border-radius: 10px;
-  padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 4rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0 1rem;
 }
 
 form .text:focus {
-  outline: none;
+    outline: none;
 }
 
+
 /* nav-bar */
+
 .navbar {
-  padding: 1.5rem 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+    padding: 1.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .navbar__links {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-right: 11%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 11%;
 }
 
 .navbar__list,
 ul {
-  list-style: none;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
+    list-style: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar__links__button {
-  width: 150px;
-  height: 45px;
-  background-color: var(--color2);
-  color: var(--color1);
+    width: 150px;
+    height: 45px;
+    background-color: var(--color2);
+    color: var(--color1);
 }
 
 a.navbar__icon--open {
-  display: none;
+    display: none;
 }
 
 a.navbar__icon--close {
-  display: none;
+    display: none;
 }
 
 .aboutDarmanito__container__h1,
 .facility__h1,
 .membership__h1 {
-  padding-right: 1rem;
-  color: var(--color5);
-  font-size: 20px;
-  border-right: solid var(--color3) 3px;
+    padding-right: 1rem;
+    color: var(--color5);
+    font-size: 20px;
+    border-right: solid var(--color3) 3px;
 }
 
+
 /* section 1 */
+
 .darmanitoApp {
-  height: 620px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1.5rem 12rem 1.5rem 0;
+    height: 620px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 12rem 1.5rem 0;
 }
 
 .darmanitoApp__container__h1 {
-  font-size: 36px;
-  color: var(--color1);
+    font-size: 36px;
+    color: var(--color1);
 }
 
 .darmanitoApp__container__p {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .darmanitoApp__container__buttons {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .darmanitoApp__container__buttons button {
-  width: 170px;
-  height: 52px;
-  margin: 20px 0 0 10px;
+    width: 170px;
+    height: 52px;
+    margin: 20px 0 0 10px;
 }
 
 .darmanitoApp__container__buttons_dowload {
-  color: #fff;
-  background-color: var(--color1);
+    color: #fff;
+    background-color: var(--color1);
 }
 
 .darmanitoApp__container__buttons_member {
-  border: solid var(--color1) 2px;
-  background-color: #fff;
+    border: solid var(--color1) 2px;
+    background-color: #fff;
 }
 
 .darmanitoApp__container__buttons_member a {
-  color: var(--color1);
+    color: var(--color1);
 }
 
 .darmanitoApp__img {
-  width: 70%;
-  height: 650px;
-  background: url(../../img/background_cloudy_left.svg) no-repeat -10rem 0;
-  background-size: 900px;
+    width: 70%;
+    height: 650px;
+    background: url(../../img/background_cloudy_left.svg) no-repeat -10rem 0;
+    background-size: 900px;
 }
 
 .darmanitoApp__img img {
-  width: 400px;
-  height: 323px;
-  position: absolute;
-  left: 12rem;
-  top: 15rem;
+    width: 400px;
+    height: 323px;
+    position: absolute;
+    left: 12rem;
+    top: 15rem;
 }
 
+
 /* section 2 */
+
 .aboutDarmanito {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 6.5rem 11rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6.5rem 11rem;
 }
 
 .aboutDarmanito__img {
-  width: 356px;
-  background: url(../img/Card-Bacground.svg) no-repeat;
+    width: 356px;
+    background: url(../img/Card-Bacground.svg) no-repeat;
 }
 
 .aboutDarmanito__img img {
-  width: 196px;
-  height: 390px;
-  position: relative;
-  top: 3rem;
-  right: 4.5rem;
+    width: 196px;
+    height: 390px;
+    position: relative;
+    top: 3rem;
+    right: 4.5rem;
 }
 
 .aboutDarmanito__container {
-  width: 600px;
-  height: 296px;
-  /* margin-right: 2rem; */
+    width: 600px;
+    height: 296px;
+    /* margin-right: 2rem; */
 }
 
 .aboutDarmanito__container__p {
-  padding-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .aboutDarmanito__container__spanGroup {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .aboutDarmanito__container__spanGroup span {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .aboutDarmanito__container__spanGroup button {
-  width: 80px;
-  height: 80px;
-  background-color: #fff;
-  box-shadow: 0 -10px 15px var(--color2), 0 10px 15px var(--color2),
-    -10px 0 15px var(--color2), 10px 0 15px var(--color2);
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 -10px 15px var(--color2), 0 10px 15px var(--color2), -10px 0 15px var(--color2), 10px 0 15px var(--color2);
 }
 
 .aboutDarmanito__container__spanGroup button:hover {
-  border: rgb(211, 205, 205) solid 1px;
+    border: rgb(211, 205, 205) solid 1px;
 }
 
 .aboutDarmanito__container__spanGroup img {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
+
 /* section 3 */
+
 .facility {
-  padding: 4rem 12rem 7rem 5rem;
+    padding: 4rem 12rem 7rem 5rem;
 }
 
 .facility__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .facility__buttonGroup {
-  width: 420px;
-  height: 420px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 2rem;
+    width: 420px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
 }
 
 .facility__buttons button {
-  width: 160px;
-  height: 160px;
-  background-color: #fff;
-  color: grey;
-  filter: grayscale(100%);
-  margin: 1rem;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 0 -10px 15px rgb(245, 243, 243), 0 10px 15px rgb(245, 243, 243),
-    -10px 0 15px rgb(245, 243, 243), 10px 0 15px rgb(245, 243, 243);
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    color: grey;
+    filter: grayscale(100%);
+    margin: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -10px 15px rgb(245, 243, 243), 0 10px 15px rgb(245, 243, 243), -10px 0 15px rgb(245, 243, 243), 10px 0 15px rgb(245, 243, 243);
 }
 
 .facility__buttons {
-  display: flex;
-  justify-content: space-between;
-  /* padding: 3rem auto; */
+    display: flex;
+    justify-content: space-between;
+    /* padding: 3rem auto; */
 }
 
 .facility__buttons button:hover,
 .facility__buttons button:focus {
-  filter: none;
-  color: var(--color1);
-  box-shadow: 0 -10px 15px var(--color2), 0 10px 15px var(--color2),
-    -10px 0 15px var(--color2), 10px 0 15px var(--color2);
+    filter: none;
+    color: var(--color1);
+    box-shadow: 0 -10px 15px var(--color2), 0 10px 15px var(--color2), -10px 0 15px var(--color2), 10px 0 15px var(--color2);
 }
 
 .facility__tables {
-  width: 65%;
-  height: 400px;
+    width: 65%;
+    height: 400px;
 }
 
 .facility__stepTable {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: row;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
 }
 
 .facility__stepTable-imgSteps {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .line-drow {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 .line-drow::before,
 .line-drow::after {
-  content: "";
-  width: 2px;
-  height: 70px;
-  background-color: rgb(228, 228, 228);
-  margin-top: -9px;
+    content: "";
+    width: 2px;
+    height: 70px;
+    background-color: rgb(228, 228, 228);
+    margin-top: -9px;
 }
 
 .facility__stepTable-steps {
-  padding-right: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .facility__stepTable-containerSteps p {
-  /* background-color: coral; */
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.facility__stepTable-containerSteps {
-  /* background-color: #00de9a; */
-  height: 300px;
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
+    /* background-color: coral; */
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
+.facility__stepTable-containerSteps {
+    /* background-color: #00de9a; */
+    height: 300px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* section 4 */
+
 .download {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 8rem;
-  background: url(../img/background_cloudy_left_big.svg) no-repeat -100px -80px,
-    url(../img/background_cloudy_right_small.svg) no-repeat 950px -150px,
-    var(--color1);
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
+    background: url(../img/background_cloudy_left_big.svg) no-repeat -100px -80px, url(../img/background_cloudy_right_small.svg) no-repeat 950px -150px, var(--color1);
 }
 
 .download__info,
 .download__img {
-  width: 50%;
+    width: 50%;
 }
 
 .download__h1,
 .download__p {
-  color: white;
+    color: white;
 }
 
 .download__form {
-  background-color: white;
-  width: 80%;
+    background-color: white;
+    width: 80%;
 }
 
 .download__form-text {
-  width: 267px;
-  height: 21px;
-  border: none;
-  font-size: 16px;
-  color: grey;
-  background-color: #fff;
+    width: 267px;
+    height: 21px;
+    border: none;
+    font-size: 16px;
+    color: grey;
+    background-color: #fff;
 }
 
 .download__form-button {
-  width: 100px;
-  height: 45px;
-  color: white;
-  background-color: var(--color1);
-  border-radius: 10px;
-  font-family: "Yekan";
-  font-weight: bold;
-  border: none;
-  font-size: 16px;
+    width: 100px;
+    height: 45px;
+    color: white;
+    background-color: var(--color1);
+    border-radius: 10px;
+    font-family: "Yekan";
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
 }
 
 .download__button {
-  width: 180px;
-  height: 55px;
-  background-color: var(--color5);
-  margin: 20px 5px;
+    width: 180px;
+    height: 55px;
+    background-color: var(--color5);
+    margin: 20px 5px;
 }
 
 .download__app-buttons {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .download__button img {
-  padding-top: 8px;
+    padding-top: 8px;
+}
+
+.download__img {
+    display: flex;
+    justify-content: center;
 }
 
 .download__img img {
-  width: 100%;
-  height: 630px;
-  margin-bottom: -2rem;
+    margin-bottom: -10rem;
 }
 
+
 /* section 5 */
+
 .membership {
-  padding: 12.5rem 8rem;
-  background: url(../img/background_cloudy_right_big.svg) no-repeat 40vw;
+    padding: 12.5rem 8rem;
+    background: url(../img/background_cloudy_right_big.svg) no-repeat 40vw;
 }
 
 .membership__card {
-  height: 55vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 -10px 15px var(--color2), 0 10px 15px var(--color2),
-    -10px 0 15px var(--color2), 10px 0 15px var(--color2);
-  border-radius: 30px;
-  padding: 1rem 5rem 0;
-  background: #fff;
+    height: 55vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -10px 15px var(--color2), 0 10px 15px var(--color2), -10px 0 15px var(--color2), 10px 0 15px var(--color2);
+    border-radius: 30px;
+    padding: 1rem 5rem 0;
+    background: #fff;
 }
 
 .membership__info {
-  line-height: 30px;
+    line-height: 30px;
 }
 
 .membership__form {
-  background-color: var(--color4);
-  margin: 50px 0;
+    background-color: var(--color4);
+    margin: 50px 0;
 }
 
 .membership__form__text {
-  width: 267px;
-  background-color: var(--color4);
-  border: none;
+    width: 267px;
+    background-color: var(--color4);
+    border: none;
 }
 
 .membership__form__button {
-  width: 130px;
-  height: 45px;
-  font-size: 16px;
-  border-radius: 10px;
-  color: white;
-  background-color: var(--color1);
-  border: none;
-  font-family: "yekan";
-  font-weight: bold;
+    width: 130px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--color1);
+    border: none;
+    font-family: "yekan";
+    font-weight: bold;
 }
 
+
 /* section 6 */
+
 .support {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 130px;
-  padding: 0 12rem;
-  background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    padding: 0 12rem;
+    background-color: var(--color1);
 }
 
 .support__info {
-  display: flex;
-  align-items: center;
-  color: #fff;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
 
 .support__h1 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .support__p {
-  padding: 0 30px;
-  font-size: 14px;
+    padding: 0 30px;
+    font-size: 14px;
 }
 
 .support__button {
-  width: 260px;
-  height: 52px;
-  background-color: var(--color5);
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    width: 260px;
+    height: 52px;
+    background-color: var(--color5);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+
 /* footer */
+
 .footer {
-  height:250px;
-  padding: 5rem 9rem 5rem 5.5rem;
-  display: flex;
-  justify-content: space-between;
+    height: 250px;
+    padding: 5rem 9rem 5rem 5.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer a {
-  padding: 10px;
+    padding: 10px;
 }
 
 .footer__col-logo__p {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .footer__container a {
-  color: var(--color6);
+    color: var(--color6);
 }
 
 .footer__col-logo {
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .footer__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
 }
 
 .footer__col-online,
 .footer__col-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer__container a:focus {
-  color: var(--color5);
-  padding-right: 1rem;
-  border-right: solid var(--color3) 3px;
+    color: var(--color5);
+    padding-right: 1rem;
+    border-right: solid var(--color3) 3px;
 }
 
 .footer__button {
-  width: 160px;
-  height: 55px;
-  background-color: #000;
-  /* margin-right: 10px; */
+    width: 160px;
+    height: 55px;
+    background-color: #000;
+    /* margin-right: 10px; */
 }
 
 .footer__button img {
-  padding-top: 8px;
+    padding-top: 8px;
 }
+
 
 /* media query */
 
-@media screen and (max-width: 1470px) {
-  /* section 4 */
-  .download__img img {
-    margin-bottom: -5rem;
-  }
-}
-
 @media screen and (max-width: 1320px) {
-  /* section 2 */
-  .aboutDarmanito {
-    padding: 2.5rem 7rem;
-  }
-
-  .aboutDarmanito__img {
-    margin-left: 0;
-  }
-
-  /* section 3 */
-  .facility {
-    padding: 6.5rem 7rem;
-  }
-
-  /* section 4 */
-  .download {
-    padding: 1rem 5rem;
-  }
+    /* section 2 */
+    .aboutDarmanito {
+        padding: 2.5rem 7rem;
+    }
+    .aboutDarmanito__img {
+        margin-left: 0;
+    }
+    /* section 3 */
+    .facility {
+        padding: 6.5rem 7rem;
+    }
+    /* section 4 */
+    .download {
+        padding: 1rem 5rem;
+    }
 }
 
 @media screen and (max-width: 1230px) {
-  /* nav-bar */
-  .navbar {
-    padding: 1.5rem 4rem;
-  }
-
-  /* section 1 */
-  .darmanitoApp {
-    padding-right: 5rem;
-  }
-
-  .darmanitoApp__img {
-    background: none;
-  }
-
-  .darmanitoApp__img img {
-    left: 5rem;
-  }
-
-  /* section 2 */
-  .aboutDarmanito {
-    padding: 2.5rem 3rem;
-  }
-
-  /* section 3 */
-  .facility {
-    padding: 3rem 3rem 7rem;
-  }
-  .facility__stepTable-steps {
-    width: 15%;
-  }
-
-  /* section 4 */
-  .download {
-    padding: 1rem 3rem;
-  }
-
-  .download__img img {
-    width: 500px;
-    height: 530px;
-    margin-bottom: -3rem;
-  }
-
-  /* section 5 */
-  .membership {
-    padding: 10rem 4rem;
-  }
-
-  .membership__card {
-    padding: 1rem 3rem 0;
-  }
-
-  /* footer */
-  .footer{
-    padding-right: 3.9rem;
-    padding-left: 3.5rem;
-  }
+    /* nav-bar */
+    .navbar {
+        padding: 1.5rem 4rem;
+    }
+    /* section 1 */
+    .darmanitoApp {
+        padding-right: 5rem;
+    }
+    .darmanitoApp__img {
+        background: none;
+    }
+    .darmanitoApp__img img {
+        left: 5rem;
+    }
+    /* section 2 */
+    .aboutDarmanito {
+        padding: 2.5rem 3rem;
+    }
+    /* section 3 */
+    .facility {
+        padding: 3rem 3rem 7rem;
+    }
+    .facility__stepTable-steps {
+        width: 15%;
+    }
+    /* section 4 */
+    .download {
+        padding: 1rem 3rem;
+    }
+    /* section 5 */
+    .membership {
+        padding: 10rem 4rem;
+    }
+    .membership__card {
+        padding: 1rem 3rem 0;
+    }
+    /* footer */
+    .footer {
+        padding-right: 3.9rem;
+        padding-left: 3.5rem;
+    }
 }
 
 @media screen and (max-width: 1050px) {
-  /* header */
-  .navbar__links{
-    margin-right: 1%;
-  }
-   .navbar__list {
-    width: 60%;
-  }
-
-  /* section 1 */
-  .darmanitoApp {
-    padding: 1.5rem 5rem;
-  }
-
-  .darmanitoApp__img img {
-    left: 5rem;
-  }
-
-  /* section 2 */
-  .aboutDarmanito {
-    padding: 1rem 2rem;
-  }
-
-  .aboutDarmanito__container {
-    width: 500px;
-  }
-
-  /* section 5 */
-  .membership {
-    padding: 8rem 2rem;
-  }
-
-  .membership__card {
-    padding: 1rem 1rem 0;
-  }
-
-  .membership__img img {
-    width: 350px;
-  }
-
-  /* section 6 */
-  .support {
-    padding: 0 5rem;
-  }
-
+    /* header */
+    .navbar__links {
+        margin-right: 1%;
+    }
+    .navbar__list {
+        width: 60%;
+    }
+    /* section 1 */
+    .darmanitoApp {
+        padding: 1.5rem 5rem;
+    }
+    .darmanitoApp__img img {
+        left: 5rem;
+    }
+    /* section 2 */
+    .aboutDarmanito {
+        padding: 1rem 2rem;
+    }
+    .aboutDarmanito__container {
+        width: 500px;
+    }
+    /* section 5 */
+    .membership {
+        padding: 8rem 2rem;
+    }
+    .membership__card {
+        padding: 1rem 1rem 0;
+    }
+    .membership__img img {
+        width: 350px;
+    }
+    /* section 6 */
+    .support {
+        padding: 0 5rem;
+    }
 }
 
 @media screen and (max-width: 950px) {
-  /* nav-bar */
-  .navbar {
-    padding: 1.5rem 2rem;
-  }
-
-  /* section 1 */
-  .darmanitoApp {
-    padding-right: 3rem;
-  }
-
-  .darmanitoApp__img img {
-    left: 3rem;
-  }
-
-  /* section 2 */
-  .aboutDarmanito__container {
-    width: 400px;
-    height: 396px;
-  }
-
-  /* section 3 */
-  .facility__container {
-    flex-direction: column;
-  }
-
-  /* section 4 */
-  .download {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .download__app-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .download__form {
-    background-color: white;
-    width: 100%;
-  }
-
-  .download__img img {
-    width: 600px;
-    margin-bottom: -3rem;
-  }
-  .download__img {
-    margin-right: -25%;
-  }
-
-  /* section 5 */
-  .membership__img img {
-    width: 300px;
-  }
-
-  /* footer */
-  .footer{
-    padding-left: 6rem;
-    padding-right: 6rem;
-    flex-wrap: wrap;
-  }
-  .footer__col-logo{
-    width: 40%;
-  }
-  .footer__container{
-    width: 60%;
-  }
+    /* nav-bar */
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+    /* section 1 */
+    .darmanitoApp {
+        padding-right: 3rem;
+    }
+    .darmanitoApp__img img {
+        width: 370px;
+        left: 3rem;
+    }
+    /* section 2 */
+    .aboutDarmanito {
+        padding: 1rem 0rem;
+    }
+    .aboutDarmanito__img {
+        background-size: 320px;
+    }
+    .aboutDarmanito__img img {
+        width: 170px;
+        height: 350px;
+        top: 2rem;
+        right: 6.7rem;
+    }
+    .aboutDarmanito__container {
+        width: 400px;
+        height: 396px;
+    }
+    /* section 3 */
+    .facility__container {
+        flex-direction: column;
+    }
+    .facility__buttonGroup {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    /* section 4 */
+    .download {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .download__app-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .download__form {
+        background-color: white;
+        width: 100%;
+    }
+    .download__img {
+        margin-top: 3rem;
+    }
+    .download__img img {
+        margin-bottom: -7rem;
+    }
+    /* section 5 */
+    .membership__img img {
+        width: 300px;
+    }
+    /* footer */
+    .footer {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .footer__col-download {
+        display: none;
+    }
+    .footer__col-logo {
+        width: 40%;
+    }
+    .footer__container {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 850px) {
-  .navbar__listItem--responsive {
-    display: block;
-  }
-
-  /* navbar */
-  .menu-icon {
-    width: 30px;
-  }
-  a.navbar__icon--open {
-    display: block;
-    position: absolute;
-    left: 3rem;
-    top: 2rem;
-  }
-
-  a.navbar__icon--close {
-    display: none;
-    position: absolute;
-    left: 3rem;
-    top: -5rem;
-    transform: rotate(45deg);
-  }
-
-  .navbar__links {
-    width: 100%;
-    height: 555px;
-    background-color: white;
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 7rem;
-    z-index: 1;
-    left: 0;
-    position: fixed;
-  }
-
-  .navbar__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .navbar__list__item {
-    line-height: 4.5rem;
-  }
-
-  .navbar__list__item a:focus {
-    padding-right: 1rem;
-    color: var(--color5);
-    font-size: 16px;
-    border-right: solid var(--color3) 3px;
-  }
-
-  .navbar hr {
-    width: 90%;
-  }
-  .navbar__links__button {
-    margin-right: 2rem;
-    margin-top: 1rem;
-  }
-  /* section 1 */
-  .darmanitoApp {
-    height: auto;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 0;
-  }
-
-  .darmanitoApp__container__buttons {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-
-  .darmanitoApp__img {
-    height: 500px;
-  }
-
-  .darmanitoApp__img img {
-    left: 25%;
-  }
-
-  /* section 2 */
-  .aboutDarmanito {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 7rem;
-  }
-
-  .aboutDarmanito__container {
-    z-index: 1;
-    width: 90%;
-    margin-top: 2rem;
-  }
-
-  /* section 3 */
-  .facility__header {
-    padding-right: 2rem;
-  }
-
-  /* section 4 */
-  .download__img {
-    margin-right: -35%;
-  }
-
-  /* section 5 */
-  .membership__img img {
-    width: 250px;
-  }
-
-  /* section 6 */
-  .support {
-    padding: 0 4rem;
-  }
+    .navbar__listItem--responsive {
+        display: block;
+    }
+    main {
+        padding-top: 100px;
+    }
+    /* navbar */
+    .menu-icon {
+        width: 30px;
+    }
+    .navbar {
+        position: fixed;
+        height: 50px;
+        width: 93%;
+        background-color: white;
+        z-index: 2;
+    }
+    a.navbar__icon--open {
+        display: block;
+        position: absolute;
+        left: 3rem;
+        top: 2rem;
+    }
+    a.navbar__icon--close {
+        display: none;
+        position: absolute;
+        left: 3rem;
+        top: -4rem;
+        transform: rotate(45deg);
+    }
+    .navbar__links {
+        width: 100%;
+        height: 550px;
+        background-color: white;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        z-index: 1;
+        left: 0;
+        /* position: fixed; */
+    }
+    .navbar__links__button {
+        margin-right: 2rem;
+    }
+    .navbar__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .navbar__list__item {
+        line-height: 4.5rem;
+    }
+    .navbar__list__item a:focus {
+        padding-right: 1rem;
+        color: var(--color5);
+        font-size: 16px;
+        border-right: solid var(--color3) 3px;
+    }
+    .navbar hr {
+        width: 90%;
+    }
+    .navbar__links__button {
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+    /* section 1 */
+    .darmanitoApp {
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+    .darmanitoApp__container__buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .darmanitoApp__img {
+        height: 380px;
+    }
+    .darmanitoApp__img img {
+        left: auto;
+        top: auto;
+        margin: 2rem 6rem 0rem 10rem;
+    }
+    /* section 2 */
+    .aboutDarmanito {
+        height: 29rem;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7rem;
+    }
+    .aboutDarmanito__container {
+        z-index: 1;
+        width: 90%;
+        margin-top: 2rem;
+    }
+    .aboutDarmanito__container__spanGroup {
+        display: none;
+    }
+    /* section 3 */
+    .facility__header {
+        padding-right: 2rem;
+    }
+    /* section 5 */
+    .membership__img img {
+        width: 250px;
+    }
+    /* section 6 */
+    .support {
+        padding: 0 4rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .responsive-page {
-    display: block;
-  }
-  .basic-page {
-    display: none;
-  }
-
-  /* section 1 */
-  .darmanitoApp__img img {
-    left: 15%;
-  }
-
-  /* section 2 */
-  .aboutDarmanito__container {
-    height: 168px;
-  }
-
-  /* section 3 */
-  .facility {
-    padding: 3rem 3rem 0;
-    margin-bottom: 5rem;
-  }
-  .facility__header {
-    padding-right: 1rem;
-  }
-  .facility__buttons button {
-    width: 120px;
-    height: 120px;
-    font-size: 12px;
-    padding: 0.5rem;
-  }
-
-  .facility__buttonGroup {
-    width: 80vw;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  .facility__tables {
-    padding-right: 1rem;
-    width: 100%;
-    height: auto;
-  }
-  .facility__stepTable-steps {
-    width: 20%;
-  }
-
-  .facility__stepTable-containerSteps {
-    margin-right: -19%;
-  }
-
-  /* section 4 */
-  .download__info,
-  .download__img {
-    width: 80%;
-  }
-  .download__form {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .download__img {
-    margin-right: -20%;
-  }
-
-  .download__app-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* section 5 */
-  .membership {
-    background: none;
-    padding: 8rem 4rem;
-  }
-
-  .membership__card {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .membership__img img {
-    width: 100%;
-  }
-
-  .membership__info {
-    width: 100%;
-  }
-
-  /* section 6 */
-  .support {
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  /* footer */
-  .footer__container a,
-  .footer__container h4 {
-    display: none;
-  }
-
-  .footer__col-logo{
-    width: 100%;
-  }
-  .footer__col-logo div:last-child {
-    display: flex;
-    justify-content: space-around;
-  }
+    .responsive-page {
+        display: block;
+    }
+    .basic-page {
+        display: none;
+    }
+    /* section 1 */
+    .darmanitoApp__img img {
+        left: auto;
+        top: auto;
+        margin: 2rem 3rem 0rem 0rem;
+    }
+    /* section 2 */
+    .aboutDarmanito__container {
+        height: 168px;
+    }
+    /* section 3 */
+    .facility {
+        padding: 3rem 3rem 0;
+        margin-bottom: 5rem;
+    }
+    .facility__header {
+        padding-right: 1rem;
+    }
+    .facility__buttons button {
+        width: 120px;
+        height: 120px;
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+    /* .facility__buttonGroup {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        margin-left: 0;
+        padding-left: 0;
+    } */
+    .facility__tables {
+        padding-right: 1rem;
+        width: 100%;
+        height: auto;
+    }
+    .facility__stepTable-steps {
+        width: 20%;
+    }
+    .facility__stepTable-containerSteps {
+        margin-right: -19%;
+    }
+    /* section 4 */
+    .download__info,
+    .download__img {
+        width: 80%;
+    }
+    .download__form {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .download__app-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* section 5 */
+    .membership {
+        background: none;
+        padding: 8rem 4rem;
+    }
+    .membership__card {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .membership__img img {
+        width: 100%;
+    }
+    .membership__info {
+        margin-left: 1.5rem;
+        width: 100%;
+    }
+    /* section 6 */
+    .support {
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    /* footer */
+    .footer__container a,
+    .footer__container h4 {
+        display: none;
+    }
+    .footer__col-logo {
+        width: 100%;
+    }
+    .footer__col-logo div:last-child {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 670px) {
-  /* section 3 */
-  .facility__stepTable-containerSteps {
-    height: 300px;
-  }
-  .facility__stepTable-containerSteps p {
-    height: 140px;
-  }
-  /* section 4 */
-  .download__img {
-    margin-right: -10%;
-  }
-  .download__img img {
-    width: 450px;
-    height: 450px;
-  }
+    /* section 1 */
+    .darmanitoApp__img img {
+        margin: 2rem 1rem;
+    }
+    /* section 3 */
+    .facility__stepTable-containerSteps {
+        height: 300px;
+    }
+    .facility__stepTable-containerSteps p {
+        height: 140px;
+    }
 }
 
 @media screen and (max-width: 540px) {
-  /* nav-bar */
-  .navbar {
-    padding: 1.5rem 2rem;
-  }
+    /* nav-bar */
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+    a.navbar__icon--open {
+        left: 3rem;
+    }
+    a.navbar__icon--close {
+        left: 3rem;
+    }
+    /* section 1 */
+    .darmanitoApp__img img {
+        margin: 2rem 3rem;
+        width: 300px;
+    }
+    .darmanitoApp__img {
+        height: 330px;
+    }
+    /* section 2 */
+    .aboutDarmanito__container__h1 {
+        font-size: 16px;
+    }
+    .aboutDarmanito__container__p {
+        font-size: 12px;
+    }
+    /* section3 */
+    .facility__info p {
+        font-size: 12px;
+    }
+    .facility__info h3,
+    .facility h1 {
+        font-size: 16px;
+    }
+    .facility__stepTable-containerSteps {
+        height: 330px;
+    }
+    /* section 4 */
+    .download {
+        background-image: none;
+    }
+    .download__p {
+        width: auto;
+        font-size: 12px;
+    }
+    .download__h1 {
+        font-size: 16px;
+        text-align: right;
+    }
+    .download__form-button {
+        height: 35px;
+    }
+    .download__form-text {
+        font-size: 12px;
+    }
+    /* section 5 */
+    .membership {
+        background-image: none;
+        padding: 5rem 2rem;
+    }
+    .membership__h1 {
+        font-size: 16px;
+    }
+    .membership__p {
+        width: auto;
+        height: 73px;
+        font-size: 12px;
+    }
+    .membership__form {
+        width: auto;
+        height: 55px;
+    }
+    .membership__form__text {
+        width: 117px;
+        height: 16px;
+        font-size: 12px;
+    }
+    .membership__form__button {
+        width: 93px;
+        height: 38px;
+        font-size: 12px;
+    }
+    /* section 6 */
+    .support {
+        display: flex;
+        flex-direction: column;
+        height: 170px;
+        padding: 0 6rem;
+    }
+    .support__info {
+        width: 204px;
+        height: 57px;
+        display: flex;
+        flex-direction: column;
+        line-height: 10px;
+        padding-top: 10px;
+    }
+    .support__h1 {
+        font-size: 16px;
+    }
+    .support__p {
+        padding: 0;
+        font-size: 12px;
+    }
+    .support__button {
+        width: 260px;
+        height: 52px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    /* footer */
+    .footer__col-logo div:last-child {
+        width: 100%;
+    }
+}
 
-  a.navbar__icon--open {
-    left: 2rem;
-  }
-
-  a.navbar__icon--close {
-    left: 2rem;
-  }
-
-  /* section 1 */
-  .darmanitoApp__img img {
-    width: 85%;
-    height: 235px;
-    left: 10%;
-  }
-
-  .darmanitoApp__img {
-    height: 350px;
-  }
-
-  /* section 2 */
-  .aboutDarmanito__container__h1 {
-    font-size: 16px;
-  }
-
-  .aboutDarmanito__container__p {
-    font-size: 12px;
-  }
-
-  /* section3 */
-  .facility__info p {
-    font-size: 12px;
-  }
-
-  .facility__info h3,
-  .facility h1 {
-    font-size: 16px;
-  }
-
-  .facility__stepTable-containerSteps {
-    height: 330px;
-  }
-
-  /* section 4 */
-  .download {
-    background-image: none;
-  }
-
-  .download__p {
-    width: auto;
-    font-size: 12px;
-  }
-
-  .download__h1 {
-    font-size: 16px;
-    text-align: right;
-  }
-
-  .download__form-button {
-    height: 35px;
-  }
-
-  .download__form-text {
-    font-size: 12px;
-  }
-
-  .download__img {
-    margin-right: -20%;
-  }
-  .download__img img {
-    width: 350px;
-    height: 350px;
-  }
-
-  /* section 5 */
-  .membership {
-    background-image: none;
-    padding: 5rem 2rem;
-  }
-
-  .membership__h1 {
-    font-size: 16px;
-  }
-
-  .membership__p {
-    width: auto;
-    height: 73px;
-    font-size: 12px;
-  }
-
-  .membership__form {
-    width: auto;
-    height: 55px;
-  }
-
-  .membership__form__text {
-    width: 117px;
-    height: 16px;
-    font-size: 12px;
-  }
-
-  .membership__form__button {
-    width: 93px;
-    height: 38px;
-    font-size: 12px;
-  }
-
-  /* section 6 */
-  .support {
-    display: flex;
-    flex-direction: column;
-    height: 170px;
-    padding: 0 6rem;
-  }
-
-  .support__info {
-    width: 204px;
-    height: 57px;
-    display: flex;
-    flex-direction: column;
-    line-height: 10px;
-    padding-top: 10px;
-  }
-
-  .support__h1 {
-    font-size: 16px;
-  }
-
-  .support__p {
-    padding: 0;
-    font-size: 12px;
-  }
-
-  .support__button {
-    width: 260px;
-    height: 52px;
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
+@media screen and (max-width: 467px) {
+    /* section 1 */
+    .darmanitoApp__img img {
+        margin: 2rem 1rem;
+    }
 }
 
 @media screen and (max-width: 411px) {
-  /* nav-bar */
-  .navbar {
-    padding: 1.5rem 1rem;
-  }
+    /* nav-bar */
+    .navbar {
+        padding: 1.5rem 1rem;
+    }
+    a.navbar__icon--open {
+        left: 1.5rem;
+    }
+    a.navbar__icon--close {
+        left: 1.5rem;
+    }
+    /* section 1 */
+    .darmanitoApp__img img {
+        width: 270px;
+        margin: 2rem 1rem;
+    }
+    /* section 2 */
+    .aboutDarmanito__container {
+        padding-right: 4rem 2rem 1rem;
+    }
+    .aboutDarmanito__img {
+        width: 17.5rem;
+        height: 20rem;
+        background-size: 100%;
+    }
+    .aboutDarmanito__img img {
+        width: 155px;
+        height: 280px;
+        top: 2rem;
+        right: 4rem;
+    }
+    /* section3 */
+    .facility {
+        padding: 0 2rem;
+    }
+    .facility__buttonGroup {
+        margin-right: 0;
+    }
+    .facility__tables {
+        width: 100%;
+        height: auto;
+    }
+    .facility__tables p {
+        width: auto;
+    }
+    .facility__stepTable-steps {
+        width: 60%;
+    }
+    .facility__stepTable-containerSteps {
+        /* padding-left: 2rem; */
+        margin-right: -30%;
+        height: 350px;
+    }
+    /* section 4 */
+    .download {
+        padding: 1rem 2rem;
+    }
+    .download__p {
+        width: auto;
+    }
+    .download__form {
+        width: 100%;
+        height: 50px;
+    }
+    .download__form-text {
+        width: 100px;
+    }
+    .download__img img {
+        width: 210px;
+        margin-bottom: -4rem;
+    }
+    /* footer */
+    .footer {
+        padding: 5rem 3rem;
+    }
+}
 
-  a.navbar__icon--open {
-    left: 1rem;
-  }
-
-  a.navbar__icon--close {
-    left: 0rem;
-  }
-
-  /* section 1 */
-  .darmanitoApp__img img {
-    top: 30%;
-  }
-
-  /* section 2 */
-  .aboutDarmanito__container {
-    padding-right: 4rem 2rem 1rem;
-  }
-
-  .aboutDarmanito__img {
-    width: 20rem;
-    height: 20rem;
-    background-size: 100%;
-  }
-
-  .aboutDarmanito__img img {
-    right: 20%;
-  }
-
-  /* section3 */
-  .facility {
-    padding: 0 2rem;
-  }
-  .facility__buttonGroup {
-    margin-right: 0;
-  }
-
-  .facility__tables {
-    width: 100%;
-    height: auto;
-  }
-
-  .facility__tables p {
-    width: auto;
-  }
-
-  .facility__stepTable-steps {
-    width: 60%;
-  }
-  .facility__stepTable-containerSteps {
-    /* padding-left: 2rem; */
-    margin-right: -30%;
-    height: 350px;
-  }
-
-  /* section 4 */
-  .download {
-    padding: 1rem 2rem;
-  }
-  .download__p {
-    width: auto;
-  }
-  .download__form {
-    width: 100%;
-    height: 50px;
-  }
-  .download__form-text {
-    width: 100px;
-  }
-  .download__img {
-    /* margin-right: -40%; */
-  }
-  .download__img img {
-    width: 250px;
-    height: 300px;
-  }
-
-  /* footer */
-  .footer {
-    padding: 5rem 3rem;
-  }
+@media screen and (max-width: 370px) {
+    .darmanitoApp__img img {
+        margin: 1rem -1rem;
+        width: 235px;
+    }
 }
